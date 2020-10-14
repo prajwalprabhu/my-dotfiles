@@ -1,0 +1,1202 @@
+3127ab588bc998157a663c83c12a890d|file:///home/coolpp/.tmux.conf|25|1|V|tmux
+	bind-key v split-window -h
+e9604d23b714597795d4bf817ce58990|file:///home/coolpp/.tmux.conf|25|1|V|tmux
+	bind-key h split-window -v
+4b3ac11e12f60507e5f27bef9b8d2792|file:///home/coolpp/.tmux.conf|25|1|V|tmux
+	# Easy config reload
+f63c81e601b008ab32383315f13c6785|file:///home/coolpp/.tmux.conf|25|1|V|tmux
+	bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded."
+04125fb1e6f462b170076ca9db70cfa1|file:///home/coolpp/my-dotfile/.config/ranger/rc.conf|396|6|v|conf
+	       mark_files
+ea1a8755155d1eed125b718959cb4b28|file:///home/coolpp/.tmux/install.sh|1|1|V|sh
+	# Author arthurkiller
+1dd5d91943cdf9beb8ad0c5695568b59|file:///home/coolpp/.tmux/install.sh|1|1|V|sh
+	# email arthur-lee@qq.com
+141bc4cef8efa80a2a17f12f9bd9cf40|file:///home/coolpp/.tmux/install.sh|1|1|V|sh
+	# data 2017-1-4
+5f17a13667b6974fa6e5d27a7f75d921|file:///home/coolpp/.tmux/install.sh|1|1|V|sh
+	# this shell is used for initialize the tmux-config
+6c99d1a1f0270418ff1f6686f3cd14fb|file:///home/coolpp/.tmux/.tmux.conf|1|1|V|tmux
+	# https://github.com/seebi/tmux-colors-solarized/blob/master/tmuxcolors-256.conf
+baa79b46808da018d3b5b4b0e8ee4433|file:///home/coolpp/.zshrc|294|1|V|zsh
+	#export PATH=$PATH:'/$HOME/.local/bin'
+cc129ed8a04742f64a4f0f7040be8bb0|file:///home/coolpp/.zshrc|294|1|V|zsh
+	# # ex = EXtractor for all kinds of archives
+f9512b8c86e7201900cfc6f26163ef0c|file:///home/coolpp/.zshrc|294|1|V|zsh
+	# # usage: ex <file>
+af0140b58e6bfab6f57bf280daef8fe6|file:///home/coolpp/.zshrc|298|1|V|zsh
+	alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+2195a16e71e8870ed5639387ff63fe73|file:///home/coolpp/.zshrc|298|1|V|zsh
+	alias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+	
+67d5e671ed151ee6c47346bf19561788|file:///home/coolpp/.zshrc|301|1|V|zsh
+	ias dmenu_run='dmenu_run -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+fda4ab31b365c11a76efc1b1dbb8b2e3|file:///home/coolpp/.tmux/.tmux.conf|1|1|V|tmux
+	#set-option -g status-style bg=colour235,fg=colour136,default # bg=base02, fg=yellow
+bd600d5ab0211e9d72b70e9d5a2e7258|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# default window title colors
+d298ca152cf2288efbf6a28929c1b33b|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-window-option -g window-status-style fg=colour244,bg=default,dim # fg=base0
+3cbd7769b845125716a89c99c62300f7|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# active window title colors
+3a0fc46cc933b817b4bedcc8c0bee643|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-window-option -g window-status-current-style fg=colour166,bg=default,bright # fg=orange
+e0b970793c21a111a9f999611cc060cd|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# pane border
+49ead4d2e974cdcc4e16cafcd6719afb|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-option -g pane-border-style fg=colour235 #fg=base02
+31e66f98a712e0fa8c110d613bcfeed5|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-option -g pane-active-border-style fg=colour240 #fg=base01
+afda1a4ea04f361f05a136ceb421e196|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# message text
+e82d5c573f6fc2b6d585a02d1a827e9c|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-option -g message-style bg=colour235,fg=colour166 # bg=base02, fg=orange
+63a9b26e0b1a47c8dc275775150e7535|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# panc number display
+4fc5b4c70867b1852dad03354ef06cee|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-option -g display-panes-active-colour colour33 #blue
+3809309482d3ac8cfe49c1a30e15c84a|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-option -g display-panes-colour colour166 #orange
+e8961129b4b3711991e6c80588ec6eaf|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	# clock
+1e3d8ab6456cb7e04b7ee518993d9ea4|file:///home/coolpp/.tmux/.tmux.conf|6|1|V|tmux
+	#set-window-option -g clock-mode-colour green #green
+c875f306669014aca47582a8da6a1b74|file:///home/coolpp/.tmux/.tmux.conf|5|1|V|tmux
+	
+	set -g status-interval 1
+d0cc10bb95def36b96a77c18bd96fbff|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# How to use true colors in vim under tmux? #1246 for 2.6 and higher
+8704c1da1a26d8d5ceb8832c4e02337c|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# https://github.com/tmux/tmux/issues/1246:
+09b94adfc28193184d80192cf41a4251|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# set -g default-terminal "tmux-256color"
+e087a55774cf1c5a20e52c2f67c616c8|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# set -ga terminal-overrides ",*256col*:Tc"
+91b88aeb65a107396729b8c3539bb9f3|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# 2.5 and lower:
+0db487f5bab6e1648ca2967d28b1ad54|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# set -g default-terminal "screen-256color"
+552da6d2ea5450a4b612e1664d6a9480|file:///home/coolpp/.tmux/.tmux.conf|80|1|V|tmux
+	# Colors
+	
+a0f8a85a65de0c7f485eb772b56f73f4|file:///home/coolpp/.tmux/.tmux.conf|80|1|V|tmux
+	# Doesn't work on iterm2 / mac
+812e3244a2021f1007497eef7969f260|file:///home/coolpp/.tmux/.tmux.conf|80|1|V|tmux
+	# if-shell "test '\( #{$TMUX_VERSION_MAJOR} -eq 2 -a #{$TMUX_VERSION_MINOR} -ge 6 \)'" 'set -g default-terminal "tmux-256color"'
+853b7877712c083450c638285d0cba4b|file:///home/coolpp/.tmux/.tmux.conf|80|1|V|tmux
+	# if-shell "test '\( #{$TMUX_VERSION_MAJOR} -eq 2 -a #{$TMUX_VERSION_MINOR} -ge 6 \)'" 'set -ga terminal-overrides ",*256col*:Tc"'
+976a94aee99ae3857282d799f658fc6c|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	# Try screen256-color (https://github.com/tmux/tmux/issues/622):
+f31935049ad7c24e5b483bd77e8eda16|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	if-shell "test '\( #{$TMUX_VERSION_MAJOR} -eq 2 -a #{$TMUX_VERSION_MINOR} -ge 6 \)'" 'set -g default-terminal "screen-256color"'
+3e38e142b1ff1ed9fb640fdfee46781f|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	if-shell "test '\( #{$TMUX_VERSION_MAJOR} -eq 2 -a #{$TMUX_VERSION_MINOR} -ge 6 \)'" 'set -ga terminal-overrides ",screen-256color:Tc"'
+4ca84b4076b5db7e82f74e2d23105819|file:///home/coolpp/.tmux/.tmux.conf|81|1|V|tmux
+	if-shell '\( #{$TMUX_VERSION_MAJOR} -eq 2 -a #{$TMUX_VERSION_MINOR} -lt 6\) -o #{$TMUX_VERSION_MAJOR} -le 1' 'set -g default-terminal "screen-256color"'
+bf3bfe7346ca19a2492b0b6a83246b3a|file:///home/coolpp/suckless/my-dwm/script/battery|11|1|V|sh
+	⚡: charged
+	❗: battery very low!
+ea83b916b3f52eec32ae6d54d59b4453|file:///home/coolpp/.my-folder/test|18|5|v|python
+	main()
+501f9b34bd8c954bffb1a1c5e7c63a31|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|1|V|c
+			case XK_p:
+7c6266c2f802528c1a6b31b222637563|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|9|V|c
+								 navhistory(-1);
+9ba024698eae379f614302e66d626b8c|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|9|V|c
+								 buf[0]=0;
+ec4b290f3d25c6eac47482fab161bef0|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|9|V|c
+								 break;
+14001eb3719061000859b49356adee85|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|3|V|c
+			case XK_n:
+863302b1cf1c1c78eaed6f2fc4da288d|file:///home/coolpp/suckless/dmenu-5.0/dmenu.c|541|9|V|c
+								 navhistory(+1);
+498786d31d7b26edb67fb1d03f595a35|file:///home/coolpp/.zshrc|295|1|V|zsh
+	. "${HOME}/.cache/wal/colors.sh"
+b22c1e91d72c34cf4954ecaf767a095f|file:///home/coolpp/.zshrc|294|1|V|zsh
+	# Import the colors.
+d34d9f8d4b9ae6e54181a9cae3049eb0|file:///home/coolpp/.zshrc|294|1|V|zsh
+	# Create the alias.
+00a31109efeff6d5cc957e5dec9392cc|file:///home/coolpp/.zshrc|294|1|V|zsh
+	alias dmenu='dmenu -nb "$color0" -nf "$color15" -sb "$color1" -sf "$color15"'
+dffbe90f61e637502861bfec804fed74|file:///home/coolpp/.zshrc|294|1|V|zsh
+	#$wp=$(cat ~/.config/wallpaper.txt)
+a2943e6742785070be37d9b9783c7674|file:///home/coolpp/my-dotfile/.config/nvim/keys/mappings.vim|32|1|V|vim
+	  inoremap <C-S-a><Esc>gg V G  
+d9ae880bf02bff5716cfd473e69203ec|file:///home/coolpp/suckless/my-dwm/config.def.h|115|68|v|cpp
+	enshot
+4511c8ac4dcc97345ac85f36a690ed07|file:///home/coolpp/suckless/my-dwm/config.def.h|75|1|V|cpp
+	 	{ "[\\]",      dwindle },
+37604cfba6c5f315e9b41cd433b0e775|file:///home/coolpp/suckless/my-dwm/config.def.h|74|3|V|cpp
+	 	{ "[@]",      spiral },
+18449e797720bca60ae6999225ffb310|file:///home/coolpp/suckless/my-dwm/config.def.h|136|1|V|cpp
+		{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[6]} },
+b4dca66419f0dfca9e9ddbfff0f8cbff|file:///home/coolpp/suckless/my-dwm/config.def.h|136|1|V|cpp
+		{ MODKEY,                       XK_w,      setlayout,      {.v = &layouts[6]} },
+		
+394ffd8cebd8788fdfedacc94f12f02b|file:///home/coolpp/suckless/my-dwm/config.def.h|128|10|v|cpp
+	ShiftMask
+8149bf7c9399a6f94c329526264e4e98|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|42|1|V|diff
+	+unsigned int const currentBg = 6, buffSize = 2048;
+	+/// [Vim Browse] Colors for search results currently on screen.
+	+unsigned int const highlightBg = 160, highlightFg = 15;
+	+char const wDelS[] = "!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~", wDelL[] = " \t";
+	+char *nmKeys [] = {              ///< Shortcusts executed in normal mode
+	+  "R/Building\nN", "r/Building\n", "X/juli@machine\nN", "x/juli@machine\n",
+	+  "Q?[Leaving vim, starting execution]\n","F/: error:\nN", "f/: error:\n", "DQf"
+	+};
+	+unsigned int const amountNmKeys = sizeof(nmKeys) / sizeof(*nmKeys);
+	+/// Style of the {command, search} string shown in the right corner (y,v,V,/)
+	+Glyph styleSearch = {' ', ATTR_ITALIC | ATTR_BOLD_FAINT, 7, 16};
+	+Glyph style[] = {{' ',ATTR_ITALIC|ATTR_FAINT,15,16}, {' ',ATTR_ITALIC,232,11},
+	+                 {' ', ATTR_ITALIC, 232, 4}, {' ', ATTR_ITALIC, 232, 12}};
+2ea045637e10c8a690f319b25db69c70|file:///home/coolpp/suckless/st-0.8.4/config.def.h|133|1|V|cpp
+	//#include "/home/coolpp/.cache/wal/colors-wal-st.h"
+8c6738580c5534a9072a51b74e0c8385|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|41|1|V|diff
+	 static unsigned int defaultrcs = 257;
+	+unsigned int const currentBg = 6, buffSize = 2048;
+215f638103126b3917e1a68da2b57a45|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|378|2|v|diff
+	static inline int max(int a, int b) { return a > b ? a : b; }
+	+static inline int min(int a, int b) { return a < b ? a : b; }
+	 
+	
+565c7b749947814c760214511d408e52|file:///home/coolpp/suckless/st-0.8.4/st.c|162|1|V|c
+	static inline int max(int a,int b) {}
+e65f1180a42d6f17a7d1b26dadf19ea6|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|378|1|V|diff
+	+static inline int max(int a, int b) { return a > b ? a : b; }
+	+static inline int min(int a, int b) { return a < b ? a : b; }
+ba72ca551205e39cc28415c1a0daebbf|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|406|1|v|diff
+	+int buffCols;
+	+extern int const buffSize;
+	+int histOp, histMode, histOff, histOffX, insertOff, altToggle, *mark;
+	+Line *buf = NULL;
+	+static TCursor c[3];
+	+static inline int rows() { return IS_SET(MODE_ALTSCREEN) ? term.row : buffSize;}
+	+static inline int rangeY(int i) { while (i < 0) i += rows(); return i % rows();}
+	+
+	
+a15c2e73046fa68b4a4904dbb2bd233c|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|406|1|V|diff
+	+int buffCols;
+	+extern int const buffSize;
+893c69095f099cfb8ee7682b233b1750|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|421|1|V|diff
+	+void historyOpToggle(int start, int paint) {
+	+	if (!histOp == !(histOp + start)) if ((histOp += start) || 1) return;
+	+	if (histMode && paint && (!IS_SET(MODE_ALTSCREEN) || altToggle)) draw();
+	+	tcursor(CURSOR_SAVE);
+	+	histOp += start;
+	+	if (histMode && altToggle) {
+	+		tswapscreen();
+	+		memset(term.dirty,0,sizeof(*term.dirty)*term.row);
+	+	}
+	+	tcursor(CURSOR_LOAD);
+	+	*(!IS_SET(MODE_ALTSCREEN)?&term.line:&term.alt)=&buf[histOp?histOff:insertOff];
+	+}
+	+
+	+void historyModeToggle(int start) {
+	+	if (!(histMode = (histOp = !!start))) {
+	+		selnormalize();
+	+		tfulldirt();
+	+	} else {
+	+		tcursor(CURSOR_SAVE);
+	+		histOp = 0;
+	+		histOff = insertOff;
+	+	}
+	+}
+	+
+	+int historyBufferScroll(int n) {
+	+	if (IS_SET(MODE_ALTSCREEN) || !n) return histOp;
+	+	int p=abs(n=(n<0) ? max(n,-term.row) : min(n,term.row)), r=term.row-p,
+	+	          s=sizeof(*term.dirty), *ptr=histOp?&histOff:&insertOff;
+	+	if (!histMode || histOp) tfulldirt(); else {
+	+		memmove(&term.dirty[-min(n,0)], &term.dirty[max(n,0)], s*r);
+	+		memset(&term.dirty[n>0 ? r : 0], 0, s * p);
+	+	}
+	+	int const prevOffBuf = sel.alt ? 0 : insertOff + term.row;
+	+	term.line = &buf[*ptr = (buffSize+*ptr+n) % buffSize];
+	+	// Cut part of selection removed from buffer, and update sel.ne/b.
+	+	if (sel.ob.x != -1 && !histOp && n) {
+	+		int const offBuf = sel.alt ? 0 : insertOff + term.row,
+	+		          pb = rangeY(sel.ob.y - prevOffBuf),
+	+		          pe = rangeY(sel.oe.y - prevOffBuf);
+	+		int const b = rangeY(sel.ob.y - offBuf), nln = n < 0,
+	+		          e = rangeY(sel.oe.y - offBuf), last = offBuf - nln;
+	+		if (pb != b && ((pb < b) != nln)) sel.ob.y = last;
+	+		if (pe != e && ((pe < e) != nln)) sel.oe.y = last;
+	+		if (sel.oe.y == last && sel.ob.y == last) selclear();
+	+	}
+	+	selnormalize();
+	+  // Clear the new region exposed by the shift.
+	+	if (!histOp) tclearregion(0, n>0?r+1:0, buffCols-1, n>0?term.row:p-1);
+	+	return 1;
+	+}
+	+
+	+int historyMove(int x, int y, int ly) {
+	+	historyOpToggle(1, 1);
+	+	y += ((term.c.x += x) < 0 ?term.c.x-term.col :term.c.x) / term.col;//< x
+	+	if ((term.c.x %= term.col) < 0) term.c.x += term.col;
+	+	if ((term.c.y += y) >= term.row) ly += term.c.y - term.row + 1;    //< y
+	+	else if (term.c.y < 0) ly += term.c.y;
+	+	term.c.y = MIN(MAX(term.c.y, 0), term.row - 1);
+	+	int off=insertOff-histOff, bot=rangeY(off), top=-rangeY(-term.row-off),
+	+	    pTop = (-ly>-top), pBot = (ly > bot), fin=histMode&&(pTop||pBot);
+	+	if (fin && (x||y)) term.c.x = pBot ? term.col-1 : 0;
+	+	historyBufferScroll(fin ? (pBot ? bot : top) : ly);
+	+	historyOpToggle(-1, 1);
+	+	return fin;
+	+}
+	+
+	+#include "normalMode.c"
+	+
+	+void selnormalize(void) {
+	+	historyOpToggle(1, 1);
+	+
+	+	int const oldb = sel.nb.y, olde = sel.ne.y;
+	+	if (sel.ob.x == -1) {
+	+		sel.ne.y = sel.nb.y = -1;
+	+	} else {
+	+		int const offsetBuffer = sel.alt ? 0 : insertOff + term.row;
+	+		int const off = sel.alt ? 0 : (histMode ? histOff : insertOff);
+	+		int const nby = rangeY(sel.ob.y - off),
+	+		          ney = rangeY(sel.oe.y - off);
+	+		sel.swap = rangeY(sel.ob.y - offsetBuffer)
+	+		         > rangeY(sel.oe.y - offsetBuffer);
+	+		sel.nb.y = sel.swap ? ney : nby;
+	+		sel.ne.y = !sel.swap ? ney : nby;
+	+		int const cnb = sel.nb.y < term.row, cne = sel.ne.y < term.row;
+	+		if (sel.type == SEL_REGULAR && sel.ob.y != sel.oe.y) {
+	+			if (cnb) sel.nb.x = (!sel.swap) ? sel.ob.x : sel.oe.x;
+	+			if (cne) sel.ne.x = (!sel.swap) ? sel.oe.x : sel.ob.x;
+	+		} else {
+	+			if (cnb) sel.nb.x = MIN(sel.ob.x, sel.oe.x);
+	+			if (cne) sel.ne.x = MAX(sel.ob.x, sel.oe.x);
+	+		}
+	+	}
+	+	int const nBet=sel.nb.y<=sel.ne.y, oBet=oldb<=olde;
+	+	for (int i = 0; i < term.row; ++i) {
+	+		int const n = nBet ? BETWEEN(i, sel.nb.y, sel.ne.y)
+	+		                   : OUT(i, sel.nb.y, sel.ne.y);
+	+		term.dirty[i] |= (sel.type == SEL_RECTANGULAR && n) ||
+	+		        (n != (oBet ? BETWEEN(i,oldb,olde) : OUT(i,oldb,olde)));
+	+
+	+	}
+	+	if (BETWEEN(oldb, 0, term.row - 1)) term.dirty[oldb] = 1;
+	+	if (BETWEEN(olde, 0, term.row - 1)) term.dirty[olde] = 1;
+	+	if (BETWEEN(sel.nb.y, 0, term.row - 1)) term.dirty[sel.nb.y] = 1;
+	+	if (BETWEEN(sel.ne.y, 0, term.row - 1)) term.dirty[sel.ne.y] = 1;
+	+
+	+	historyOpToggle(-1, 1);
+	+}
+	+
+9ea8475ad306f5b9efd12f8317e62ac1|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|421|1|v|diff
+	+void historyOpToggle(int start, int paint) {
+55470aeeb7f63b114b8843208b9e9d81|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|537|1|V|diff
+	+	sel.oe.y = sel.ob.y = row + !sel.alt * (histMode ? histOff : insertOff);
+	+	if (sel.snap != 0) sel.mode = SEL_READY;
+03a37400056fc27ab2c3b484d03432db|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|687|1|V|diff
+	+	return ((sel.nb.y > sel.ne.y) ? OUT(y, sel.nb.y, sel.ne.y)
+	+	                              : BETWEEN(y, sel.nb.y, sel.ne.y)) &&
+	+	       (y != sel.nb.y || x >= sel.nb.x) &&
+	+	       (y != sel.ne.y || x <= sel.ne.x);
+b692f8a4bad26139547482dfdd224e1c|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|687|1|V|diff
+	+	return ((sel.nb.y > sel.ne.y) ? OUT(y, sel.nb.y, sel.ne.y)
+	+	                              : BETWEEN(y, sel.nb.y, sel.ne.y)) &&
+424ea8582121c1bd7c541535c1c9fe4c|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|705|1|V|diff
+	+	int const start = sel.swap ? sel.oe.y : sel.ob.y, h = rows();
+	+	int endy = (sel.swap ? sel.ob.y : sel.oe.y);
+	+	for (; endy < start; endy += h);
+	+	Line * const cbuf = IS_SET(MODE_ALTSCREEN) ? term.line : buf;
+	+	bufsize = (term.col+1) * (endy-start+1 ) * UTF_SIZ;
+	+	assert(bufsize > 0);
+ad7a042761586888377a1c81c75a8c0a|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|705|1|V|diff
+	+	int const start = sel.swap ? sel.oe.y : sel.ob.y, h = rows();
+	+	int endy = (sel.swap ? sel.ob.y : sel.oe.y);
+3906525b2c6929625e6c7dc17a270b43|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|72|1|v|diff
+	+#include <X11/keysym.h>
+	+#include <X11/XKBlib.h>
+	+
+	+#include "normalMode.h"
+	+#include "utils.h"
+	+
+	+extern Glyph const styleSearch, style[];
+	+extern char const wDelS[], wDelL[], *nmKeys[];
+	+extern unsigned int bg[], fg, currentBg, highlightBg, highlightFg, amountNmKeys;
+	+
+	+typedef struct { int p[3]; } Pos;
+	+struct NormalModeState {
+	+	struct OperationState {
+	+		enum Op {noop=0, visual='v', visualLine='V', yank = 'y'} op;
+	+		enum Infix {infix_none=0, infix_i='i', infix_a='a'} infix;
+	+	} cmd;
+	+	struct MotionState {
+	+		uint32_t c; int active; Pos searchPos;
+	+		enum Search {none=0, fw='/', bw='?'} search;
+	+	} m;
+	+} defaultNormalMode, state;
+	+
+de7c77153f94b729a661a642daae7368|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|826|1|V|diff
+	+	int const colSet = col, alt = IS_SET(MODE_ALTSCREEN), ini = buf == NULL;
+	+	col = MAX(col, buffCols);
+	+	row = MIN(row, buffSize);
+	+	int const minrow = MIN(row, term.row), mincol = MIN(col, buffCols);
+5cfd7e5deccda5f4ae97c4923c3afab9|file:///home/coolpp/suckless/st-0.8.4/st-meta-vim-full-20200607-43a395a.diff|826|1|v|diff
+	+	int const colSet = col, alt = IS_SET(MODE_ALTSCREEN), ini = buf == NULL;
+	+	col = MAX(col, buffCols);
+	+	row = MIN(row, buffSize);
+	+	int const minrow = MIN(row, term.row), mincol = MIN(col, buffCols);
+	 	int *bp;
+	 	TCursor c;
+	 
+	@@ -2493,6 +2496,7 @@ tresize(int col, int row)
+	 		        "tresize: error resizing to %dx%d\n", col, row);
+	 		return;
+	 	}
+	+	if (alt) tswapscreen();
+	 
+	 	/*
+	 	 * slide screen to keep cursor where we expect it -
+	@@ -2500,48 +2504,54 @@ tresize(int col, int row)
+	 	 * memmove because we're freeing the earlier lines
+	 	 */
+	 	for (i = 0; i <= term.c.y - row; i++) {
+	-		free(term.line[i]);
+	 		free(term.alt[i]);
+	 	}
+	 	/* ensure that both src and dst are not NULL */
+	 	if (i > 0) {
+	-		memmove(term.line, term.line + i, row * sizeof(Line));
+	 		memmove(term.alt, term.alt + i, row * sizeof(Line));
+	 	}
+	 	for (i += row; i < term.row; i++) {
+	-		free(term.line[i]);
+	 		free(term.alt[i]);
+	 	}
+	 
+	 	/* resize to new height */
+	-	term.line = xrealloc(term.line, row * sizeof(Line));
+	+	buf = xrealloc(buf, (buffSize + row) * sizeof(Line));
+	 	term.alt  = xrealloc(term.alt,  row * sizeof(Line));
+	 	term.dirty = xrealloc(term.dirty, row * sizeof(*term.dirty));
+	+	mark = xrealloc(mark, col * row * sizeof(*mark));
+	 	term.tabs = xrealloc(term.tabs, col * sizeof(*term.tabs));
+	 
+	 	/* resize each row to new width, zero-pad if needed */
+	 	for (i = 0; i < minrow; i++) {
+	-		term.line[i] = xrealloc(term.line[i], col * sizeof(Glyph));
+	 		term.alt[i]  = xrealloc(term.alt[i],  col * sizeof(Glyph));
+	 	}
+	 
+	 	/* allocate any new rows */
+	 	for (/* i = minrow */; i < row; i++) {
+	-		term.line[i] = xmalloc(col * sizeof(Glyph));
+	 		term.alt[i] = xmalloc(col * sizeof(Glyph));
+	 	}
+	-	if (col > term.col) {
+	-		bp = term.tabs + term.col;
+	+	if (col > buffCols) {
+	+		bp = term.tabs + buffCols;
+	 
+	-		memset(bp, 0, sizeof(*term.tabs) * (col - term.col));
+	+		memset(bp, 0, sizeof(*term.tabs) * (col - buffCols));
+	 		while (--bp > term.tabs && !*bp)
+	 			/* nothing */ ;
+	 		for (bp += tabspaces; bp < term.tabs + col; bp += tabspaces)
+	 			*bp = 1;
+	 	}
+	+	Glyph g=(Glyph){.bg=term.c.attr.bg, .fg=term.c.attr.fg, .u=' ', .mode=0};
+	+	for (i = 0; i < buffSize; ++i) {
+	+		buf[i] = xrealloc(ini ? NULL : buf[i], col*sizeof(Glyph));
+	+		for (int j = ini ? 0 : buffCols; j < col; ++j) buf[i][j] = g;
+	+	}
+	+	for (i = 0; i < row; ++i) buf[buffSize + i] = buf[i];
+	+	term.line = &buf[*(histOp?&histOff:&insertOff) +=MAX(term.c.y-row+1,0)];
+	+	memset(mark, 0, col * row * sizeof(*mark));
+	 	/* update terminal size */
+	-	term.col = col;
+	+	term.col = colSet;
+	+	buffCols = col;
+	 	term.row = row;
+	+	if (alt) tswapscreen();
+	 	/* reset scrolling region */
+	 	tsetscroll(0, row-1);
+	 	/* make use of the LIMIT in tmoveto */
+	@@ -2570,15 +2580,17 @@ resettitle(void)
+	 void
+	 drawregion(int x1, int y1, int x2, int y2)
+	 {
+	+	if (altToggle && histMode && !histOp)
+	+		memset(term.dirty, 0, sizeof(*term.dirty) * term.row);
+	+	int const o = !IS_SET(MODE_ALTSCREEN) && histMode && !histOp, h =rows();
+	 	int y;
+	 
+	 	for (y = y1; y < y2; y++) {
+	-		if (!term.dirty[y])
+	-			continue;
+	-
+	-		term.dirty[y] = 0;
+	-		xdrawline(term.line[y], x1, y, x2);
+	+		int const oy = o ? (y + insertOff - histOff + h) % h : y;
+	+		if (!BETWEEN(oy, 0, term.row-1) || !term.dirty[y]) continue;
+	+		xdrawline(term.line[y], x1, oy, x2);
+	 	}
+	+	memset(&term.dirty[y1], 0, sizeof(*term.dirty) * (y2 - y1));
+	 }
+	 
+	 void
+	@@ -2597,7 +2609,9 @@ draw(void)
+	 	if (term.line[term.c.y][cx].mode & ATTR_WDUMMY)
+	 		cx--;
+	 
+	+	if (histMode) historyPreDraw();
+	 	drawregion(0, 0, term.col, term.row);
+	+	if (!histMode)
+	 	xdrawcursor(cx, term.c.y, term.line[term.c.y][cx],
+	 			term.ocx, term.ocy, term.line[term.ocy][term.ocx]);
+	 	term.ocx = cx;
+	diff --git a/st.h b/st.h
+	index d978458..f537392 100644
+	--- a/st.h
+	+++ b/st.h
+	@@ -8,6 +8,7 @@
+	 #define MAX(a, b)		((a) < (b) ? (b) : (a))
+	 #define LEN(a)			(sizeof(a) / sizeof(a)[0])
+	 #define BETWEEN(x, a, b)	((a) <= (x) && (x) <= (b))
+	+#define OUT(x, a, b)		((a) <= (x) || (x) <= (b))
+	 #define DIVCEIL(n, d)		(((n) + ((d) - 1)) / (d))
+	 #define DEFAULT(a, b)		(a) = (a) ? (a) : (b)
+	 #define LIMIT(x, a, b)		(x) = (x) < (a) ? (a) : (x) > (b) ? (b) : (x)
+	diff --git a/utils.h b/utils.h
+	new file mode 100644
+	index 0000000..ca435e6
+	--- /dev/null
+	+++ b/utils.h
+	@@ -0,0 +1,23 @@
+	+/// Dynamic memory-chunk, with (1) datatype size, (2/3) initialized / allocated chunk, (4) content
+	+typedef struct { uint8_t const elSize; uint32_t init, alloc; char* content; } DynamicArray;
+	+#define UTF8_ARRAY {4, 0, 0, NULL}
+	+
+	+static inline int p_alloc(DynamicArray *s, uint32_t amount) {
+	+	uint32_t const diff=s->init+s->elSize*amount-s->alloc, nas=s->alloc+max(diff,15)*s->elSize;
+	+	if (s->alloc < s->init + s->elSize * amount) {
+	+		char* tmp = realloc(s->content, nas);
+	+		if (!tmp) return 0;
+	+		s->alloc = nas, s->content = tmp;
+	+	}
+	+	return 1;
+	+}
+	+static inline char *view(DynamicArray * s, uint32_t i) { return s->content + i*s->elSize; }
+	+static inline char *end(DynamicArray *s, uint32_t i) { return s->content +s->init-(i+1)*s->elSize; }
+	+static inline uint32_t getU32(DynamicArray* s, uint32_t i, int b) { return *((uint32_t*) (b ?view(s,i) :end(s,i))); }
+	+static char *expand(DynamicArray *s) { if (!p_alloc(s, 1)) return NULL; s->init += s->elSize; return end(s, 0); }
+	+static inline void pop(DynamicArray* s) { s->init -= s->elSize; }
+	+static inline void empty(DynamicArray* s) { s->init = 0; }
+	+static inline int size(DynamicArray const * s) { return s->init / s->elSize; }
+	+static inline void assign(DynamicArray* s, DynamicArray const *o) { 
+	+	if (p_alloc(s, size(o))) memcpy(s->content, o->content, (s->init=o->init));
+	+}
+	diff --git a/win.h b/win.h
+	index a6ef1b9..cea19f3 100644
+	--- a/win.h
+	+++ b/win.h
+	@@ -19,6 +19,7 @@ enum win_mode {
+	 	MODE_MOUSEMANY   = 1 << 15,
+	 	MODE_BRCKTPASTE  = 1 << 16,
+	 	MODE_NUMLOCK     = 1 << 17,
+	+	MODE_NORMAL      = 1 << 18,
+	 	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\
+	 	                  |MODE_MOUSEMANY,
+	 };
+	diff --git a/
+1edd9e79d177c0e56e9b9c4afec76d38|file:///home/coolpp/suckless/my-dwm/config.def.h|134|1|V|cpp
+		{ MODKEY,                       XK_p,      setlayout,      {.v = &layouts[5]} },
+ed7575675752b83aa4fd9ee2b4253b03|file:///home/coolpp/suckless/my-dwm/config.def.h|134|1|V|cpp
+		{ MODKEY,                       XK_p,      setlayout,      {.v = &layouts[5]} },
+	
+82886327716421df05153d0fd6852767|file:///home/coolpp/suckless/my-dwm/config.def.h|29|1|V|cpp
+		"st", NULL,
+8a34bae500e41756df059c865347b928|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"picom",NULL,
+a6a1ee602fb0503a8e3ef176e8606fe3|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"xdman",NULL,
+9bddec5bfe9b89085d674b875f6d0f51|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"dwmblocks",NULL,
+75efed487de926f6a357b82f029caa42|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"volumeicon",NULL,
+86321a37736f4acc123cb354728e881e|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"clipmenud",NULL,
+7d6b75f2e8614bd6103c3a33beb871e9|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"mocp --server",NULL,
+8349f3a8b4043a68d83c2b1bf8db69ba|file:///home/coolpp/suckless/my-dwm/config.def.h|29|2|V|cpp
+		"dunst",NULL,
+c9859dd531eb0f6ec2c5a3f15f536714|file:///home/coolpp/suckless/my-dwm/config.def.h|135|1|V|cpp
+		{ MODKEY,                       XK_p,      setlayout,      {.v = &layouts[10]} },
+06383e959327061eef1e1b64fbfd9dd1|file:///home/coolpp/suckless/my-dwm/dwm-cyclelayouts-20180524-6.2.diff|33|1|v|diff
+	+	{ MODKEY|ControlMask,		XK_comma,  cyclelayout,    {.i = -1 } },
+	+	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
+	 	{
+9fa8ae147c551a30c3f4480baafa0327|file:///etc/profile.d/perlbin.sh|2|1|V|sh
+	# https://wiki.archlinux.org/index.php/Perl_Policy#Binaries_and_scripts
+472fcc9cebe9015c1c209b41f8acf38d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|2|1|V|sh
+	#  ____ _____
+3c8db65bb3b5a1681e2dd7d37bfed568|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|2|1|V|sh
+	# |  _ \_   _|  Derek Taylor (DistroTube)
+4906cec65cd0ee5269720ea85ab6d0f2|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|2|1|V|sh
+	# | | | || |    http://www.youtube.com/c/DistroTube
+7549d620a325e528cd03ba6f1eb9571e|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|2|1|V|sh
+	# | |_| || |    http://www.gitlab.com/dwt1/
+7acf18ef3570a5d6474da95eb8a40f43|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|2|1|V|sh
+	# |____/ |_|
+fac67d91cabebaeedeff48bbf24eda1e|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|4|1|V|sh
+	glances
+f4a8681f10cc9b07b95c7b37256fa300|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|6|1|V|sh
+	ftop
+714c8d5fec74da0a39b496a63603cb12|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|6|1|V|sh
+	iotop
+6e2cfa8072a1b6b6f67fb14c3604c31d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|6|1|V|sh
+	iptraf-ng
+7c96c429e6f6ac35e124ba0c897cb78d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|6|1|V|sh
+	nmon
+7d21023f4d38fa4f356cd0835b312b5f|file:///home/coolpp/my-dotfile/.dmenu/dmenu-sysmon.sh|6|1|V|sh
+	s-tui
+f46e2d3f5f3ed2f93bae1ee4cdd4ea68|file:///home/coolpp/my-dotfile/.dmenu/dmenu-surfraw.sh|1|1|V|sh
+	#!/bin/bash
+ff5f9d477e7e53027f95639173f823af|file:///home/coolpp/my-dotfile/.dmenu/dmenu-surfraw.sh|2|1|V|sh
+	#  ____ _____ 
+c5abf6c8370bcd5e3adf9787258abe89|file:///home/coolpp/my-dotfile/.dmenu/dmenu-surfraw.sh|2|1|V|sh
+	# | |_| || |    http://www.gitlab.com/dwt1/ 
+470532cffd18066e19045dcda77303c9|file:///home/coolpp/my-dotfile/.dmenu/dmenu-surfraw.sh|2|1|V|sh
+	# |____/ |_| 
+68a8eaefdecc2849b72f717018d31918|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|14|1|V|sh
+	emacs.d/init.el
+5f9ed858471cfa74ab174b4fb3b56b7b|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|14|1|V|sh
+	herbstluftwm
+c87d447aca8930caa526954d2c0d130c|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|18|1|V|sh
+	qtile
+b71ad7d955a66e8f813be7fb35e9be03|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|18|1|V|sh
+	quickmarks
+1f2e3d15855696edad3a431a7329cf5c|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|18|1|V|sh
+	qutebrowser
+ca05365baddf549b97814927beabd661|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|22|1|V|sh
+	sxhkd
+9aa974636ea5f6f9cc5af4bceb84a7e5|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|25|1|V|sh
+	xmobar
+0e9ba6e80f95b5728ac5bd1681aa5738|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|25|1|V|sh
+	xmonad
+65d47c5e648a081e6887278a58c1564f|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|24|1|V|sh
+	vimb
+353c8773694fbf1251dec54d98b614a1|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|21|1|V|sh
+	surf
+2096dfaae2b379e76fef43af6d64d1d9|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|20|1|V|sh
+	stumpwm
+a0957d41094d368cae54483ead2a314d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|11|1|V|sh
+	doom.d/init.el
+d751cc8d62056e80a67f3c2bd7716d3f|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|10|1|V|sh
+	doom.d/config.el
+c6699cebdc88f76703069d0eda0d8df3|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|8|1|V|sh
+	broot
+d574d4bb40c84861791a694a999cce69|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|7|1|V|sh
+	bash
+be121740bf988b2225a313fa1f107ca1|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|6|1|V|sh
+	awesome
+aa756f3eb0fe070509802dc8c36bbac4|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|28|1|V|sh
+	lacritty)
+3c51d653dd8ca3ce4bdc87fcf0664fe7|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|28|3|V|sh
+			choice="$HOME/.config/alacritty/alacritty.yml"
+860587af03ac7bcf0fb624503375f00a|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|28|2|V|sh
+		awesome)
+9009f672efaed743d4b8765ceae83dfa|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|28|3|V|sh
+			choice="$HOME/.config/awesome/rc.lua"
+a2e90c372c796c5ae5fca210110b403e|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|31|2|V|sh
+		broot)
+bfe56699fb74dde56d468b537e7f6bf3|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|31|3|V|sh
+			choice="$HOME/.config/broot/conf.toml"
+45593446697ee61e768a0e86a894c842|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|31|2|V|sh
+		bspwm)
+8db55aea352cf01ce93a981ffe7261fb|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|34|3|V|sh
+	    doom.d/config.el)
+62de6ca3720fbe482078477371f02047|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|34|3|V|sh
+			choice="$HOME/.doom.d/config.el"
+3fc93e73c3cfbf3fc5e7b3b763b65c46|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|34|5|V|sh
+	    doom.d/init.el)
+c465cd12a3dfa5116c4b9f8fe067b69d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|34|3|V|sh
+			choice="$HOME/.doom.d/init.el"
+8d1813452784e2821a7d178310ba4b1a|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|40|1|V|sh
+		emacs.d/init.el)
+ce5a86ab1938a44bd07b8747d7e208bd|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|40|3|V|sh
+			choice="$HOME/.emacs.d/init.el"
+77d65e34ebb530df855ea5fb0da9c177|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|40|2|V|sh
+		herbstluftwm)
+a6d8b04604370e4ea09a50e094d5f7bc|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|40|3|V|sh
+			choice="$HOME/.config/herbstluftwm/autostart"
+78393bf012c5c55f62742aaa8c9d530e|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|41|3|V|sh
+			choice="$HOME/.i3/config"
+52a0181bcf4f666e60dfdce000d7042d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|2|V|sh
+		qtile)
+8afbe635f03454cd54dc78a93dfb93ba|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|3|V|sh
+			choice="$HOME/.config/qtile/config.py"
+db5629177f0ef9c1300ece104be28f7b|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|2|V|sh
+		quickmarks)
+921a4ef42e0e6b23edf09658fdc35b12|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|3|V|sh
+			choice="$HOME/.config/qutebrowser/quickmarks"
+c661ce92dba3c724c1a6c6f7ff3f3572|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|2|V|sh
+		qutebrowser)
+0b720b927180124efa3038ad0b0c64e7|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|3|V|sh
+			choice="$HOME/.config/qutebrowser/autoconfig.yml"
+d3e3f73b2ea7baf6dd26056539bf07a2|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|2|V|sh
+		spectrwm)
+b2f1abe8b8393c8fa3090976eeec110d|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|52|3|V|sh
+			choice="$HOME/.spectrwm.conf"
+6d89d2068d1e1b675fda5b528e253108|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|2|V|sh
+		stumpwm)
+20903cd9d027359c53302a158336e40f|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|3|V|sh
+			choice="$HOME/.config/stumpwm/config"
+c38c63dd3aaea1d09044a8578dbdfe0a|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|2|V|sh
+		surf)
+c2c595a51739ef44db1c160fc7140fac|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|3|V|sh
+			choice="$HOME/surf-distrotube/config.h"
+5e4f54dc1e2d90db9a9464eee25fb732|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|2|V|sh
+		sxhkd)
+f0de730832269b1b5cccc073e7244391|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|3|V|sh
+			choice="$HOME/.config/sxhkd/sxhkdrc"
+869f7b33a11551d076348422523b7976|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|2|V|sh
+		tabbed)
+d0dc18ccde6241d0e6c2d89e3f68f146|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|55|3|V|sh
+			choice="$HOME/tabbed-distrotube/config.h"
+59de7d39f0bc6969a0876f87d293ff94|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|2|V|sh
+		vim)
+0ce424433eee7f420be6030c6abf2ff6|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|3|V|sh
+			choice="$HOME/.vimrc"
+1355fece8275302a6bb15bf3e9f1874c|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|2|V|sh
+		vimb)
+c49a891085d695760a760bc236fa9704|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|3|V|sh
+			choice="$HOME/.config/vimb/config"
+0e24bbbb97f62496b1ebcee9db8beaae|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|2|V|sh
+		xmobar)
+9de5088d2d034807d0b6fd417f4399a8|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|3|V|sh
+			choice="$HOME/.config/xmobar/xmobarrc2"
+df3ce69c27896e8c102ec36e75743b40|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|2|V|sh
+		xmonad)
+4ce2eefcb8ece1c9306638e5fa2d26ba|file:///home/coolpp/my-dotfile/.dmenu/dmenu-edit-configs.sh|61|3|V|sh
+			choice="$HOME/.xmonad/xmonad.hs"
+f642f7bd20446005354dd1b32b734996|file:///home/coolpp/netusage|2|1|V|sh
+	iw dev | awk '/Interface/'
+9da1173b39c2087a0d53043a3ef23f03|file:///home/coolpp/suckless/my-dwm/test.py|9|1|V|python
+	print(n)
+5eacee9e65cb745bcd31a1d81e184c0c|file:///home/coolpp/suckless/my-dwm/test.py|9|1|V|python
+	data = ["one", "two", "three"]
+810c34db15bd05760b02742cc1c43652|file:///home/coolpp/suckless/my-dwm/test.py|11|1|V|python
+	    if "keys[]" in data[i]:
+193fc8eee8454ac5bf89597d5f4335ef|file:///home/coolpp/suckless/my-dwm/test.py|11|9|V|python
+	        print("Found")
+6c47e9885104d97cf88999584289007d|file:///home/coolpp/suckless/my-dwm/test.py|11|5|V|python
+	    print(i, name)
+39a4e57a61776d7322e4c3fb0dbf2f91|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|1|1|V|python
+	import json
+85457a4803ed86ab476d488266b03a4e|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|5|1|V|python
+	def generate(i):
+5b254a5e4114daf96c5e5b55f81a6970|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|5|5|V|python
+	    global data
+cd12e1246578950602e6d279986a3666|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|8|1|V|python
+	n = len(data)
+26d501f2b4e9d2421258b9e2028a9f91|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|19|1|V|python
+	print(fi, ei)
+335a868108db99cbe653888fb3dae5cd|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|27|1|V|python
+	startfile("keys.txt")
+3bb31284a72ce0ee5e1bbb96900e222c|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|11|1|V|python
+	        print("Fond")
+05070fb7c6e062ad7cdef1fc27cb4e58|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|14|9|V|python
+	        print(name)
+be0dabe108170a7a88377759ab6947b1|file:///home/coolpp/suckless/my-dwm/get_keybinding.py|15|9|V|python
+	        print("end")
+7c7026529fe2cb518ed137603eef1878|file:///home/coolpp/Downloads/Video/lessons.py|2|1|V|python
+	math=[]
+aab9024d6e73d682fb0ba152de7d9626|file:///home/coolpp/Downloads/Video/lessons.py|2|1|V|python
+	lan=[]
+0ee41df42bff22f24bdb79073875927a|file:///home/coolpp/Downloads/Video/lessons.py|10|1|V|python
+	    if "math" in i.lower():
+	        M.append(i)
+b8f34d99b52e7501850cce4b2c8ef247|file:///home/coolpp/Downloads/Video/lessons.py|23|1|V|python
+	print(C)
+f66a9d71591f5cab41ee3287f28e30cf|file:///home/coolpp/Downloads/Video/lessons.py|23|8|V|python
+	print(P)
+	print(C)
+	print(M)
+	print(Cs)
+	print(S)
+	print(E)
+fa596c6423e100255e0348b1044e2fc5|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	"  ____ _____ 
+ee7c7daeea94ddb8fffdb8cb5bc12ee9|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	" |  _ \_   _|  Derek Taylor (DistroTube)
+4498d21c6a19a392131d3e8c4174eb93|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	" | | | || |    http://www.youtube.com/c/DistroTube
+c88852e50c17f2f6d088c9dc16b7b89a|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	" | |_| || |    http://www.gitlab.com/dwt1/ 
+6064a22c25925584e41a4ae608aa0e50|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	" |____/ |_|
+8b545ce4cb59cfac1b5b0e8788299626|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|1|1|V|
+	" |____/ |_|  	
+900ebbcb9e9255fc319b6b40f17ba041|file:///home/coolpp/test|1|1|V|conf
+	#/bin/python3
+	a = input()
+	print(a)
+2a878422155d40e66cb58e05dc7203d4|file:///home/coolpp/test|2|1|V|python
+	a=$@
+bbdd8e79a80d96b205a65d8723591fec|file:///home/coolpp/test|2|1|V|python
+	#a=input("ENter")
+01e09c5c2f6652a128a7023a61303c57|file:///home/coolpp/Downloads/Video/lessons.py|27|5|V|python
+	    print
+b55a5fdf0e0da5db9cc798ca7230e4f1|file:///home/coolpp/Downloads/Video/lessons.py|26|1|V|python
+	if "-l" in arg:
+d6b3507d2e8b2be63666b48413b5767b|file:///home/coolpp/Downloads/Video/lessons.py|25|1|V|python
+	    arg=argv[1]
+3f9ecc6c218dd2720a10ffbf71042143|file:///home/coolpp/Downloads/Video/lessons.py|36|1|V|python
+	        with open("lesson.json",w) as f:
+	            dump(json_string,f,index=2)
+f680da5198ab96a274e835cc5f7ec6aa|file:///home/coolpp/Downloads/Video/lessons.py|39|1|V|python
+	else:
+0cf31b2c283ce3431794586df7b0996d|file:///home/coolpp/Downloads/Video/lessons.py|35|1|v|python
+	    
+7bb0edd98f22430a03b67f853e83c2ca|file:///home/coolpp/Downloads/Video/lessons.py|36|1|v|python
+	        
+4e54a3ea002722ab0efb32982d196ac1|file:///home/coolpp/Downloads/Video/lessons.py|38|4|V|python
+	            i=arg.index("-w")
+dd9b139dc793a876ef55beaab47efc5a|file:///home/coolpp/Downloads/Video/lessons.py|38|13|V|python
+	            print(i)
+0553b9aab2065ad84060f8ef9c0770f5|file:///home/coolpp/Downloads/Video/lessons.py|38|13|V|python
+	            name=arg.replace("+w","")
+f09321db7b328a3e9999c6dcc2ec8f0f|file:///home/coolpp/Downloads/Video/lessons.py|38|13|V|python
+	            if name !=None:
+220c0ea65af1fc4c2fc9785a4b730b1b|file:///home/coolpp/Downloads/Video/lessons.py|38|17|V|python
+	                with open(name,"w") as f:
+f88308ba000ef6bc76b2e72b6d103acb|file:///home/coolpp/Downloads/Video/lessons.py|38|21|V|python
+	                    dump(json_string,f,indent=2)
+ed46706efc5fc28683ad4b7f30e0cd36|file:///home/coolpp/Downloads/Video/lessons.py|38|13|V|python
+	            else:
+2001ee7800fb7a70b08382cc09dc1c3a|file:///home/coolpp/Downloads/Video/lessons.py|29|10|v|python
+	 if "-h" in arg:
+	#             print("""
+	#                   -l to print the result
+	#                   -w to write the result to lesson.json
+	#                   -w [filename] to write the result
+	#                   """)
+	#         if "-l" in arg:
+	#             print(json_string)
+	#         if "-w" in arg:
+	#             with open("lesson.json","w") as f:
+	#                 dump(json_string,f,indent=2)
+	
+7c7bee28cb9b99cf4b453d6b764f7948|file:///home/coolpp/my-dotfile/.config/ranger/plugins/vim_file_chooser.vim|10|1|V|vim
+	function! RangeChooser()
+	    let temp = tempname()
+	    " The option "--choosefiles" was added in ranger 1.5.1. Use the next line
+	    " with ranger 1.4.2 through 1.5.0 instead.
+	    "exec 'silent !ranger --choosefile=' . shellescape(temp)
+	    if has("gui_running")
+	        exec 'silent !xterm -e ranger --choosefiles=' . shellescape(temp)
+	    else
+	        exec 'silent !ranger --choosefiles=' . shellescape(temp)
+	    endif
+	    if !filereadable(temp)
+	        redraw!
+	        " Nothing to read.
+	        return
+	    endif
+	    let names = readfile(temp)
+	    if empty(names)
+	        redraw!
+	        " Nothing to open.
+	        return
+	    endif
+	    " Edit the first item.
+	    exec 'edit ' . fnameescape(names[0])
+	    " Add any remaning items to the arg list/buffer list.
+	    for name in names[1:]
+	        exec 'argadd ' . fnameescape(name)
+	    endfor
+	    redraw!
+	endfunction
+	command! -bar RangerChooser call RangeChooser()
+	nnoremap <leader>r :<C-U>RangerChooser<CR>
+69fcdc3d7175659aab1dee906feb4588|file:///MoreMax/wallpaper/description|1|1|V|
+	Unnamed repository; edit this file 'description' to name the repository.
+ecd90fb638e04b028431d05090334a1f|file:///usr/etc/doas.conf|1|1|V|
+	permit coolpp as root
+1cd26f08c3024dcc3155d06f2cd68985|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|433|1|V|vifm
+	"Set BackGround Using pywal"
+56924463bdde37b17cd28b5544838059|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|433|1|V|vifm
+	nnoremap bw  background set_wal %f
+d293a74488a5ff154c4364201731423f|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|62|1|V|vifm
+	"colorscheme distrotube
+2f8cf8c580c8860b6acc50747cee3ccc|file:///home/coolpp/suckless/my-dwm/config.def.h|91|52|v|cpp
+	mpv 
+1ca0a79740747cf4f561b9b46e8a9826|file:///home/coolpp/suckless/my-dwm/config.def.h|91|52|v|cpp
+	video0
+3398e9d23852bc67383cd4630b7007ac|file:///home/coolpp/suckless/my-dwm/config.def.h|92|20|v|cpp
+	scratchpadcmd
+b64fff63039c66fe7116331d12834fc4|file:///home/coolpp/suckless/my-dwm/dwm-scratchpads-20200414-728d397b.diff|48|1|v|diff
+	+typedef struct {
+	+	const char *name;
+	+	const void *cmd;
+	+} Sp;
+	+const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
+	+const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "ranger", NULL };
+	+const char *spcmd3[] = {"keepassxc", NULL };
+	+static Sp scratchpads[] = {
+	+	/* name          cmd  */
+	+	{"spterm",      spcmd1},
+	+	{"spranger",    spcmd2},
+	+	{"keepassxc",   spcmd3},
+	+};
+80302fe952e692ae389a352ef2829ac5|file:///home/coolpp/suckless/my-dwm/dwm-scratchpads-20200414-728d397b.diff|73|1|v|diff
+	+	{ "Gimp",	  NULL,			NULL,		0,				1,			 -1 },
+	+	{ "Firefox",  NULL,			NULL,		1 << 8,			0,			 -1 },
+	+	{ NULL,		  "spterm",		NULL,		SPTAG(0),		1,			 -1 },
+	+	{ NULL,		  "spfm",		NULL,		SPTAG(1),		1,			 -1 },
+	+	{ NULL,		  "keepassxc",	NULL,		SPTAG(2),		0,			 -1 },
+	
+41907946e8173a5395593fadff2f11f5|file:///home/coolpp/suckless/my-dwm/config.def.h|60|1|V|cpp
+	+	{ "Gimp",	  NULL,			NULL,		0,				1,			 -1 },
+f0b2d6b24771efe5d7094cc19f9ce384|file:///home/coolpp/suckless/my-dwm/config.def.h|60|1|V|cpp
+	+	{ "Firefox",  NULL,			NULL,		1 << 8,			0,			 -1 },
+d83a0d20f241d0e5368228fc62cff4db|file:///home/coolpp/suckless/my-dwm/dwm.c|296|1|V|c
+	static unsigned int scratchtag = 1 << LENGTH(tags);
+f16dc697cf4362934aa744ef85d74e5a|file:///home/coolpp/suckless/my-dwm/config.def.h|21|1|V|cpp
+	static const char file-manager      = "~/.config/vifm/scripts/vifmrun";
+f26e35c3580ed618384ae3faa6a22603|file:///home/coolpp/suckless/my-dwm/config.def.h|21|1|V|cpp
+	static const char file_manager      = "~/.config/vifm/scripts/vifmrun";
+da752273e6a7d9f50afb9a5ef3effe8c|file:///home/coolpp/suckless/my-dwm/config.def.h|32|26|v|cpp
+	keepassxc
+953e1f90ac8de583de8587f387050bf9|file:///home/coolpp/.zshrc|346|1|V|zsh
+	#tmux
+306090b35de3805082dbc409f6c36987|file:///home/coolpp/.zshrc|345|1|V|zsh
+	[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+51dbae80391f9c8fb60feb278d280536|file:///home/coolpp/.zshrc|343|1|V|zsh
+	#in there. They will not be overwritten by skel.
+97707fc6878f6c876baf2458876fcaf6|file:///home/coolpp/.zshrc|342|1|V|zsh
+	#create a file called .zshrc-personal and put all your personal aliases
+97c7bcd17242aeadb684e18aa0e1302c|file:///home/coolpp/my-dotfile/.moc/config|4|1|v|
+	                                          
+311faae725b79122b24f240331468217|file:///home/coolpp/my-dotfile/.moc/config|5|1|v|
+	                                                                                                   
+06e47bb94b1d0740525d87955ca47096|file:///home/coolpp/my-dotfile/.dwm/autostart.sh|13|1|V|sh
+	emacs --daemon
+e7bb7758889f418b5a42a4df75044e04|file:///home/coolpp/suckless/my-dwm/config.def.h|162|2|V|cpp
+		{ MODKEY,                 XK_l,    {XK_t,XK_i},[setlayout,setlayout],[{.v= &layouts[3]},{.v = &layouts[2]}] },
+6c3e226b4d4795d518ab341b0824ec29|file:///home/coolpp/suckless/my-dwm/config.def.h|125|36|v|cpp
+	NULL
+bc9c98b8ceb152831f31bbaf13e2cb22|file:///home/coolpp/suckless/st/config.def.h|9|1|V|cpp
+	static char *font = "font-awesome free"
+82c37ac76dd4de61318533e5e09417d1|file:///home/coolpp/my-dotfile/.config/vifm/vifmrc|463|1|V|vifm
+	nnoremap gb :file &<cr>l
+9c56e3b3f0555b886ee0db2681dac52e|file:///home/coolpp/test.cpp|5|3|V|cpp
+	  char a;
+75c8cae70023596dbd4e0e55f4bab75f|file:///home/coolpp/test.cpp|5|3|V|cpp
+	  cout<<"Enter a char";
+e1ab7fc43f6dc7e2d5232e559a454047|file:///home/coolpp/test.cpp|5|3|V|cpp
+	  cin>>a;
+76200b1ca5bf355a1e88d7fa42dbcd9f|file:///home/coolpp/test.cpp|5|3|V|cpp
+	  (a=='1')?(cout<<"True"):(cout<<"False");
+94779e6c0a03fce54fa54c159d66bfa7|file:///home/coolpp/test.cpp|4|1|V|cpp
+	{
+	  return 0;
+e4cd3c729ca6d4ba67988749bdf0e5bc|file:///home/coolpp/test.cpp|3|1|V|cpp
+	t main(int argc, char *argv[])
+07b939e4d87a113c614dd297ab3de0e5|file:///home/coolpp/test.cpp|3|3|V|cpp
+	  derive D(10,20);
+c26ba559a5f34d46a49fafed87946fb7|file:///home/coolpp/test.cpp|3|3|V|cpp
+	  return 0;
+e134e643d35ea3732c6d70a0a4a0494d|file:///home/coolpp/w.cpp|1|1|V|cpp
+	#include "q.cpp"
+535b67e1bf86b7a5b0d63e0ee5657440|file:///home/coolpp/w.cpp|7|1|V|cpp
+	  wq=20;
+7366bef4c01a8c5a2eada0d4e96d71b7|file:///home/coolpp/w.cpp|10|22|v|cpp
+	<<"*
+8b06a34d4b75c0156571171cf958cc06|file:///home/coolpp/w.cpp|9|3|V|cpp
+	  *wq=25;
+2962d9512ad7f9618f3c298d8786f990|file:///home/coolpp/suckless/my-dwm/config.def.h|32|1|V|cpp
+	const char *spcmd3[] = {"mpv /dev/video0", "-n", "spcam", "-g", "144x41", NULL };
+2245023265ae4cf87d02c8b6ba991139|file:///home/coolpp/suckless/my-dwm/config.def.h|31|67|v|cpp
+	config
+f39326c4fcdc264333f78c291b6e4a94|file:///home/coolpp/suckless/my-dwm/config.def.h|31|67|v|cpp
+	vifm
+cec5b866b06ff739f068ef82a456b8b3|file:///home/coolpp/suckless/my-dwm/config.def.h|31|67|v|cpp
+	scriptsvifmrun
+d6c5855a62cf32a4dadbc2831f0f295f|file:///home/coolpp/suckless/my-dwm/config.def.h|31|67|v|cpp
+	scripts
+e648cc0b74858c53e833ec4478745142|file:///home/coolpp/Library/voidrice/.local/bin/dmenupass|6|1|V|sh
+	dmenu -fn Monospace-18 -P -p "$1" <&- && echo
+6dd0bf9470d716d7b045d98c00b6a4c0|file:///home/coolpp/Library/voidrice/.local/bin/dmenupass|6|8|v|sh
+	Monospace-18 
+7a04234f9b4478a8c55b18cf1e0f939a|file:///home/coolpp/Library/voidrice/.local/bin/dmenupass|6|7|v|sh
+	--P 
+c0c348a1304bff887c40d7720aadf8d6|file:///home/coolpp/suckless/CDWM/config.def.h|195|57|v|cpp
+	arcolinux-logout
+0222b9dc283c9c2e3adf5a8908587554|file:///home/coolpp/.zshrc|297|27|v|zsh
+	my-dwm
+0c175ba6b3382bd264a3f7fd884e6122|file:///home/coolpp/suckless/CDWM/config.def.h|106|1|V|cpp
+	/* helper for spawning shell commands in the pre dwm-5.0 fashion */
+f094e5dd9140126e539286889a11919b|file:///home/coolpp/.dwm/autostart.sh|9|6|v|sh
+	iaslkdmadscl
+ba8afc42fb720baa3194e6ed35ac2885|file:///home/coolpp/w.cpp|4|2|V|cpp
+	  int w=20;
+1f81fc874fcc4e61e08f9c04c217eede|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  int *wq;
+56ad6dbc17e2b32db4d7dce9528d16f8|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  int *qw;
+d3af9ba6a4852f4f1545869031f6bb37|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  wq=&w;
+14a53c17477068abea174dfb996dba8f|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  qw=&q;
+8570fcc72c41df5413a3e6da0f07b6c4|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  *qw=*wq;
+5b61ab01f8ca3e3ffa1df2ad2f639710|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  w=200;
+25a4ce22b1ea7495835c1a3d993516b4|file:///home/coolpp/w.cpp|4|3|V|cpp
+	  std::cout<<*qw<<*wq;
+86ee2ba55aa03b06900298d3c1884440|file:///home/coolpp/w.cpp|3|3|v|cpp
+	int 
+18b33fcc1cffa1f6395444affa5de5f2|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	notify-send 'MOCP'$( ptinrf '%s' $(mocp -Q %title))")},
+ffe4bedcf630cfdfb9a6206254d3ba17|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	notify-send 
+2d3c1b1fdc7c97078b87793dbba93fdd|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	MOCP
+6bc7ba8284441fde6064168c161a8043|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	'$( 
+b285725f524fca94f65fcf5990e2b828|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	ptinrf 
+5e86af6391157391fe257629238f5cc9|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	mocp 
+d5d3db1765287eef77d7927cc956f50a|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	title
+f022f614e5d6a97c51a5078b9bf9977b|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	)titl
+87cfd3b1e468b98e5602b0e2c0f9ce2a|file:///home/coolpp/suckless/my-dwm/config.def.h|181|87|v|cpp
+	notify-send 'MOCP' $(printf '%s' $(mocp -Q %file))")},
+a4027fd6bd6f0eddcda0219d5dde7fbc|file:///home/coolpp/suckless/my-dwm/config.def.h|182|83|v|cpp
+	notify-send 'MOCP'$(printf '%s' (mocp -Q %title))") },
+610ae1aa4f62de1ca0ce1ccfa1be755e|file:///home/coolpp/.zshrc|118|1|V|zsh
+	#list
+	alias ls='ls --color=auto'
+	alias la='ls -a'
+	alias ll='ls -la'
+	alias l='ls'
+	alias l.="ls -A | egrep '^\.'"
+	
+	#fix obvious typo's
+	alias cd..='cd ..'
+	alias pdw="pwd"
+	alias udpate='sudo pacman -Syyu'
+	alias upate='sudo pacman -Syyu'
+	
+	## Colorize the grep command output for ease of use (good for log files)##
+	alias grep='grep --color=auto'
+	alias egrep='egrep --color=auto'
+	alias fgrep='fgrep --color=auto'
+	
+	#readable output
+	alias df='df -h'
+	
+	#pacman unlock
+	alias unlock="sudo rm /var/lib/pacman/db.lck"
+	
+	#free
+	alias free="free -mt"
+	
+	#use all cores
+	alias uac="sh ~/.bin/main/000*"
+	
+	#continue download
+	alias wget="wget -c"
+	
+	#userlist
+	alias userlist="cut -d: -f1 /etc/passwd"
+	
+	#merge new settings
+	alias merge="xrdb -merge ~/.Xresources"
+	
+	# Aliases for software managment
+	# pacman or pm
+	alias pacman='sudo pacman --color auto'
+	alias update='sudo pacman -Syyu'
+	
+	# yay as aur helper - updates everything
+	alias pksyua="yay -Syu --noconfirm"
+	alias upall="yay -Syu --noconfirm"
+	
+	#ps
+	alias psa="ps auxf"
+	alias psgrep="ps aux | grep -v grep | grep -i -e VSZ -e"
+	
+	#grub update
+	alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+	
+	#add new fonts
+	alias update-fc='sudo fc-cache -fv'
+	
+	#copy/paste all content of /etc/skel over to home folder - backup of config created - beware
+	alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
+	#backup contents of /etc/skel to hidden backup folder in home/user
+	alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
+	
+	#copy bashrc-latest over on bashrc - cb= copy bashrc
+	#alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
+	#copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
+	alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && source ~/.zshrc'
+	
+	#switch between bash and zsh
+	alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+	alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+	
+	#quickly kill conkies
+	alias kc='killall conky'
+	
+	#hardware info --short
+	alias hw="hwinfo --short"
+	
+	#skip integrity check
+	alias yayskip='yay -S --mflags --skipinteg'
+	alias trizenskip='trizen -S --skipinteg'
+	
+	#check vulnerabilities microcode
+	alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
+	
+	#get fastest mirrors in your neighborhood
+	alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+	alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+	alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+	alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+	
+	#mounting the folder Public for exchange between host and guest on virtualbox
+	alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
+	
+	#shopt
+	#shopt -s autocd # change to named directory
+	#shopt -s cdspell # autocorrects cd misspellings
+	#shopt -s cmdhist # save multi-line commands in history as single line
+	#shopt -s dotglob
+	#shopt -s histappend # do not overwrite history
+	#shopt -s expand_aliases # expand aliases
+	
+	#youtube-dl
+	alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+	alias yta-best="youtube-dl --extract-audio --audio-format best "
+	alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+	alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+	alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+	alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+	alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+	alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+	
+	alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+	
+	#Recent Installed Packages
+	alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
+	alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
+	
+	#Cleanup orphaned packages
+	alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+	
+	#get the error messages from journalctl
+	alias jctl="journalctl -p 3 -xb"
+	
+	#nano for important configration files
+	#know what you do in these files
+	alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
+	alias npacman="sudo nano /etc/pacman.conf"
+	alias ngrub="sudo nano /etc/default/grub"
+	alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
+	alias nslim="sudo nano /etc/slim.conf"
+	alias noblogout="sudo nano /etc/oblogout.conf"
+	alias nmirrorlist="sudo nano /etc/pacman.d/mirrorlist"
+	alias nconfgrub="sudo nano /boot/grub/grub.cfg"
+	
+	#gpg
+	#verify signature for isos
+	alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
+	#receive the key of a developer
+	alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
+	
+	#shutdown or reboot
+	alias ssn="sudo shutdown now"
+	alias sr="sudo reboot"
+	#git
+	#alias clonee ="git clone """
+	#alias add ="git add -A"
+	#alias push="git pull origin && git push origin"
+	# navigation
+	alias ..='cd ..' 
+	alias ...='cd ../..'
+	alias .3='cd ../../..'
+	alias .4='cd ../../../..'
+	alias .5='cd ../../../../..'
+	# confirm before overwriting something
+	alias cp="cp -i"
+	alias mv='mv -i'
+	
+	alias mi="sudo make install"
+	alias addup='git add -u'
+	alias gaa='git add -A'
+	alias branch='git branch'
+	alias checkout='git checkout'
+	alias clone='git clone'
+	alias commit='git commit -m'
+	alias fetch='git fetch'
+	alias pull='git pull origin'
+	alias push='git push origin'
+	alias gs='git status'
+	alias gt='git tag'
+	alias newtag='git tag -a'
+	alias gac="git commit -a"
+	alias r="ranger"
+	alias edwm="cd ~/suckless/my-dwm/; nvim config.def.h"
+	alias vim="nvim"
+	alias erc="nvim ~/.zshrc"
+	alias eas="nvim ~/.dwm/autostart.sh"
+	alias pm="pacman "
+	alias yt="youtube-dl -f 243+251"
+	alias gdwm="cd ~/suckless/my-dwm"
+	alias clr="clear"
+	alias dfm="dmenufm"
+	alias vf="~/.config/vifm/scripts/vifmrun"
+b29ef6f611982d23b890831920e3fbac|file:///home/coolpp/suckless/my-dwm/script/sysact|17|23|v|sh
+	sudo 
+01645f8d7d39a2a87d6f80e5cfee56b6|file:///home/coolpp/.dwm/autostart.sh|7|1|V|sh
+	# clipmenud &
+41a5b2c134e4a75b8ffe6b845596bc81|file:///home/coolpp/my-dotfile/.config/fish/config.fish|188|1|V|fish
+	function fish_prompt
+8dda46a625e6277fe0b175f497fe0969|file:///home/coolpp/my-dotfile/.config/fish/config.fish|188|5|V|fish
+	    eval $GOPATH/bin/powerline-go -error $status -shell bare
+2ad39a99b63b29b0087a366e63ef5944|file:///home/coolpp/my-dotfile/.config/fish/config.fish|185|3|V|fish
+	  powerline-shell --shell bare $status
+c50ee273ca80150a9b81c61dd9399797|file:///home/coolpp/my-dotfile/.config/fish/config.fish|185|2|V|fish
+	 end
+95429353037588c8d895bb025dbc96f0|file:///home/coolpp/my-dotfile/.config/fish/config.fish|185|3|V|fish
+	  .local/bin/powerline-shell --shell bare $status
+b19fb16e080994d4ae5674f0f41def02|file:///home/coolpp/.dwm/autostart.sh|12|1|V|sh
+	lxsession 
+8cdaafbc06663bfa5775da261891371f|file:///home/coolpp/.xinitrc|17|1|V|sh
+	nm-applet
+6b5eb1eb112a8d2c43fe2e692277da6c|file:///home/coolpp/suckless/my-dwm/config.def.h|127|7|v|cpp
+	XK_f
+8577ef6c0af435898ca78d7e1413ade5|file:///home/coolpp/suckless/my-dwm/config.def.h|128|2|V|cpp
+		{ AltXK_f,                     XK_f,      spawn,          SHCMD("st -e ~/.config/vifm/scripts/vifmrun ~/.my-folder") },
+d8e9599c637436ad76a0b5d65eaa102f|file:///home/coolpp/suckless/my-dwm/config.def.h|134|66|v|cpp
+	pkill -f /dev/video0 ||mpv /dev/video0") },
+1311129a0fb3a7b6ba10e5f74876070e|file:///home/coolpp/.zshrc|292|1|V|zsh
+	alias vim="nvim"
+43bfe472f03d28439467228c54ccc1d8|file:///home/coolpp/my-dotfile/.config/ranger/plugins/vim_file_chooser.vim|10|1|v|vim
+	function! RangeChooser()
+	    let temp = tempname()
+	    " The option "--choosefiles" was added in ranger 1.5.1. Use the next line
+	    " with ranger 1.4.2 through 1.5.0 instead.
+	    "exec 'silent !ranger --choosefile=' . shellescape(temp)
+	    if has("gui_running")
+	        exec 'silent !xterm -e ranger --choosefiles=' . shellescape(temp)
+	    else
+	        exec 'silent !ranger --choosefiles=' . shellescape(temp)
+	    endif
+	    if !filereadable(te
+8ef70a63e32ee4fdbe0eeb496ea9bd21|file:///home/coolpp/.kite/editors.json|1|79|v|json
+	sublime_text_3
+e987d684a01306ca4e7b0435c3e137f2|file:///home/coolpp/.kite/editors.json|1|79|v|json
+	sublime_text

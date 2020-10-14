@@ -1,0 +1,15 @@
+#!/bin/bash
+declare optins=("
+youtube
+dwm
+st
+bhu
+")
+choice=$(echo -e  "${optins[@]}" | dmenu -i )
+echo $choice
+case $choice in 
+ youtube)  echo "Opening Youtube in Qutebrowser" && qutebrowser www.youtube.com;;
+ dwm) echo "Opening dwm in qutebrowser" && 	qutebrowser dwm.suckless.org;;
+ st) echo "Opening st in qutebrowser" && qutebrowser st.suckless.org ;;
+ bhu) echo "Opening college website in qutebrowser" && qutebrowser bhuvanendrapuc.snitya.in/pp/home_dashboard.php;;
+esac
