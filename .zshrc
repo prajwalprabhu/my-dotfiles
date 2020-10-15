@@ -1,4 +1,19 @@
 # If you come from bash you might have to change your $PATH.
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Set $PATH if ~/.local/bin exist
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH=$HOME/.local/bin:$PATH
+    export PATH=$HOME/.local/bin/statusbar:$PATH
+fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -11,7 +26,7 @@ export ZSH=/usr/share/oh-my-zsh/
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="candy"
+ZSH_THEME="half-life"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -27,8 +42,7 @@ ZSH_THEME="candy"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
+ DISABLE_AUTO_UPDATE="true"
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
 
@@ -71,7 +85,7 @@ ZSH_THEME="candy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git git-extras archlinux adb cp python docker)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,8 +105,43 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+  mkdir $ZSH_CACHE_DIR
+fi
 
 export EDITOR="nvim"
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up			
+bindkey '^[[B' history-substring-search-down
+
+HISTFILE=~/.zhistory
+HISTSIZE=10000
+SAVEHIST=5000
+
+# Use fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# Activate powerlevel10k theme
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# Use history substring search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+echo $(lsb_release -is) $(uname -srm) 
+
+# Add useful aliases 
+alias aup="pamac upgrade --aur"
+alias grubup="sudo update-grub"
+alias orphaned="sudo pacman -Rns $(pacman -Qtdq)"
+alias fixpacman="sudo rm /var/lib/pacman/db.lck"
+# Set your countries like --country France --country Germany -- or more.
+#alias upd='sudo reflector --latest 5 --age 2 --fastest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist && cat /etc/pacman.d/mirrorlist && sudo pacman -Syu'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 ####   ARCOLINUX SETTINGS   ####
 
 
@@ -288,12 +337,12 @@ alias gs='git status'
 alias newtag='git tag -a'
 alias gac="git commit -a"
 alias r="ranger"
-alias edwm="cd ~/suckless/my-dwm/; nvim config.def.h"
+alias edwm="cd ~/repo/my-dwm/; nvim config.def.h"
 alias erc="nvim ~/.zshrc"
 alias eas="nvim ~/.dwm/autostart.sh"
 alias pm="pacman "
 alias yt="youtube-dl -f 243+251"
-alias gdwm="cd ~/suckless/my-dwm"
+alias gdwm="cd ~/repo/my-dwm"
 alias clr="clear"
 alias dfm="dmenufm"
 alias vf="~/.config/vifm/scripts/vifmrun"
@@ -307,6 +356,12 @@ addconf()
 {
   mv $PWD/$1 ~/my-dotfile/$2 ;
   ln -s ~/my-dotfile/$2/$1 $PWD/$1
+}
+lnconf()
+{	if [ -d ~/.config/$1 ]
+        then		mv  ~/.config/$1 ~/config/$1.bak
+	fi
+	ln -s ~/repo/my-dotfiles/config/$1  ~/.config/$1
 }
 ex ()
 {
@@ -332,22 +387,22 @@ ex ()
   fi
 }
 #powerline-shell
-function powerline_precmd() {
-    PS1="$(powerline-shell --shell zsh $?)"
-}
+#function powerline_precmd() {
+#    PS1="$(powerline-shell --shell zsh $?)"
+#}
 
-function install_powerline_precmd() {
-  for s in "${precmd_functions[@]}"; do
-    if [ "$s" = "powerline_precmd" ]; then
-      return
-    fi
-  done
-  precmd_functions+=(powerline_precmd)
-}
+#function install_powerline_precmd() {
+#  for s in "${precmd_functions[@]}"; do
+#    if [ "$s" = "powerline_precmd" ]; then
+#      return
+#    fi
+#  done
+#  precmd_functions+=(powerline_precmd)
+#}
 
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
+#if [ "$TERM" != "linux" ]; then
+#    install_powerline_precmd
+#fi
 
 
 

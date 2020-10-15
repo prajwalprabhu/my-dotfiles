@@ -1,6 +1,6 @@
 Theme = wal
 ReadTags = yes
-MusicDir = /home/coolpp/Music/songs
+MusicDir = /home/coolpp/Music
 Fastdir1 = /home/coolpp/Downloads/Video
 #     Fastdir2 = ${MusicDir}/mp3/electronic
 #     Fastdir3 = ${MusicDir}/mp3/rap

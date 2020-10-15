@@ -430,7 +430,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Sample mappings
 "Set BackGround Using pywal"
-nnoremap bw  :!wal -i %f <cr>
+nnoremap bw  :!wal -i %f  && nitrogen --set-auto %f<cr>
 
 "Go to
 nnoremap gh :cd ~/ <cr>
