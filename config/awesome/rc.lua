@@ -11,6 +11,11 @@ local wibox         = require("wibox")
 -- Theme handling library
 local beautiful     = require("beautiful")
 
+--Scrath Pad
+local scratch       =require("scratch")
+screen_width = awful.screen.focused().geometry.width
+screen_height = awful.screen.focused().geometry.height
+
 -- Notification library
 local naughty       = require("naughty")
 naughty.config.defaults['icon_size'] = 100
@@ -74,7 +79,7 @@ local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "geany"
 local filemanager       = "thunar"
 local mailclient        = "geary"
-local mediaplayer       = "vlc"
+local mediaplayer       = "mpv"
 local scrlocker         = "slimlock"
 local terminal          = "st"
 local virtualmachine    = "virtualbox"
@@ -86,6 +91,7 @@ awful.util.tagnames = { " DEV ", " WWW ", " SYS ", " DOC ", " VBOX ", " CHAT ", 
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
+    lain.layout.centerwork,
     awful.layout.suit.floating,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
@@ -103,7 +109,7 @@ awful.layout.layouts = {
     --awful.layout.suit.corner.se,
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
-    lain.layout.centerwork,
+    -- lain.layout.centerwork,
     lain.layout.centerwork.horizontal,
     --lain.layout.termfair,
     --lain.layout.termfair.center,
@@ -397,6 +403,8 @@ globalkeys = my_table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn( terminal ) end,
               {description = "terminal ", group = "super"}),
+    awful.key( {altkey,},"Return",function() scratch.toggle("st ",{instance="scratch"})end,
+                {description ="st-scratchpad",group="scratchpad"}),
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey,    }, "x", awesome.quit ,
@@ -454,14 +462,14 @@ globalkeys = my_table.join(
         function ()
             -- os.execute(string.format("amixer q set %s 1%%+", beautiful.volume.channel))
             os.execute("pamixer -i 5")
-            beautiful.volume.update()
+            -- beautiful.volume.update()
         end),
     --awful.key({ modkey1 }, "Down",
     awful.key({ }, "XF86AudioLowerVolume",
         function ()
             -- os.execute(string.format("amixer -q set %s 1%%-", beautiful.volume.channel))
-            os.exe_callback("pamixer -d 5")
-            beautiful.volume.update()
+            os.execute("pamixer -d 5")
+            -- beautiful.volume.update()
         end),
     awful.key({ }, "XF86AudioMute",
         function ()
@@ -632,11 +640,32 @@ awful.rules.rules = {
                      size_hints_honor = false
      }
     },
+    rule_any = {
+        instance = { "scratch" },
+        class = { "scratch" },
+        icon_name = { "scratchpad_urxvt" },
+    },
+    properties = {
+        skip_taskbar = false,
+        floating = true,
+        ontop = false,
+        minimized = true,
+        sticky = false,
+        width = screen_width * 0.7,
+        height = screen_height * 0.75
+    },
+    callback = function (c)
+        awful.placement.centered(c,{honor_padding = true, honor_workarea=true})
+        gears.timer.delayed_call(function()
+            c.urgent = false
+        end)
+    end,
 
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = false } },
+      properties = { titlebars_enabled = false} },
 
+    
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
     --{ rule = { class = browser1 },
@@ -805,7 +834,7 @@ client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
-awful.spawn.with_shell("wal -R ; sleep 2; nitrogen --restore")
+awful.spawn.with_shell("wal -R ; sleep 2; feh --bg-scale /home/collpp/.config/wall.jpg")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("volumeicon")

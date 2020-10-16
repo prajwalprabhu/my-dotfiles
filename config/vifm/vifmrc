@@ -430,7 +430,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Sample mappings
 "Set BackGround Using pywal"
-nnoremap bw  :!wal -i %f  && nitrogen --set-auto %f<cr>
+nnoremap bw  :!wal -i %f  && cp %f /home/collpp/.config/wall.jpg ; feh --bg-scale /home/collpp/.config/wall.jpg <cr>
 
 "Go to
 nnoremap gh :cd ~/ <cr>
@@ -441,7 +441,9 @@ nnoremap gl :cd ~/Library <cr>
 nnoremap gt :cd ~/text\ book <cr>
 nnoremap gcc :cd ~/.config <cr>
 nnoremap gcv :cd ~/.config/vifm <cr>
-nnoremap gdw :cd ~/suckless/my-dwm <cr>
+nnoremap grr :cd ~/repo <cr>
+nnoremap grc :cd ~/.config/awesome <cr>
+nnoremap gmd :cd ~/repo/my-dotfiles <cr>
 
 "Open all images in current directory in sxiv thumbnail mode
 nnoremap sx :!sxiv -t %d & <cr>
