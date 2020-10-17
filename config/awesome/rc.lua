@@ -11,10 +11,6 @@ local wibox         = require("wibox")
 -- Theme handling library
 local beautiful     = require("beautiful")
 
---Scrath Pad
-local scratch       =require("scratch")
-screen_width = awful.screen.focused().geometry.width
-screen_height = awful.screen.focused().geometry.height
 
 -- Notification library
 local naughty       = require("naughty")
@@ -74,7 +70,7 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "firefox"
+local browser           = "qutebrowser"
 local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "geany"
 local filemanager       = "thunar"
@@ -86,8 +82,8 @@ local virtualmachine    = "virtualbox"
 
 -- awesome variables
 awful.util.terminal = terminal
---awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
-awful.util.tagnames = { " DEV ", " WWW ", " SYS ", " DOC ", " VBOX ", " CHAT ", " MUS ", " VID ", " GFX " }
+awful.util.tagnames = {  " ", " ", " ", " ", " ", " ", " ", " ", " ", " "  }
+--awful.util.tagnames = { " DEV ", " WWW ", " SYS ", " DOC ", " VBOX ", " CHAT ", " MUS ", " VID ", " GFX " }
 awful.layout.suit.tile.left.mirror = true
 awful.layout.layouts = {
     awful.layout.suit.tile,
@@ -185,7 +181,7 @@ awful.util.mymainmenu = freedesktop.menu.build({
     },
     after = {
         { "Terminal", terminal },
-        { "Log out", function() awesome.quit() end },
+       { "Log out", function() awesome.quit() end },
         { "Sleep", "systemctl suspend" },
         { "Restart", "systemctl reboot" },
         { "Exit", "systemctl poweroff" },
@@ -235,10 +231,10 @@ globalkeys = my_table.join(
         {description = "code" , group = "terminal apps" }),
     awful.key({  altkey  }, "c", function () awful.util.spawn( "clipmenu" ) end,
         {description = "clipmeu" , group = "terminal apps" }),
-    awful.key({  altkey  }, "m", function () awful.util.spawn( terminal.." -e  mocp" ) end,
+    awful.key({  altkey  }, "m", function () awful.util.spawn( "tdrop -n 5 -a st  -e  mocp" ) end,
         {description = "moc" , group = "terminal apps" }),
-    awful.key({  altkey  }, "b", function () awful.util.spawn( "firefox" ) end,
-        {description = "vifm" , group = "terminal apps" }),
+    awful.key({  altkey  }, "b", function () awful.util.spawn( browser ) end,
+        {description = "Brave" , group = "terminal apps" }),
         -- screenshots
     awful.key({ }, "Print", function () awful.util.spawn("scrot 'ScreeshotD-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'") end,
         {description = "Scrot", group = "screenshots"}),
@@ -403,8 +399,12 @@ globalkeys = my_table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn( terminal ) end,
               {description = "terminal ", group = "super"}),
-    awful.key( {altkey,},"Return",function() scratch.toggle("st ",{instance="scratch"})end,
+    awful.key( {altkey},"Return",function () awful.spawn.with_shell("tdrop -a st") end,
                 {description ="st-scratchpad",group="scratchpad"}),
+    awful.key( {altkey,"Shift"   },"Return",function () awful.spawn.with_shell("tdrop -n 4 -a st -e ~/.config/vifm/scripts/vifmrun") end,
+                {description ="st-scratchpad",group="scratchpad"}),
+    awful.key({altkey}, "w",function () awful.spawn.with_shell(" tdrop -x 70% -y 70% -w 30% -h 30% mpv /dev/video0")end,
+               {description ="webcam",group="scratchpad"}),
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey,    }, "x", awesome.quit ,
@@ -456,6 +456,14 @@ globalkeys = my_table.join(
     awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 10") end,
               {description = "-10%", group = "hotkeys"}),
 
+    --MOCP Music Keys
+    awful.key({},"XF86AudioNext",function() awful.spawn.with_shell("mocp -f && sleep 1; notify-send $(mocp -Q %file) &") end,
+            {description="Song next in MOCP",group="MOCP"}),
+
+    awful.key({},"XF86AudioPrev",function() awful.spawn.with_shell("mocp -r && sleep 1; notify-send $(mocp -Q %file) &") end,
+            {description="Song previous in MOCP",group="MOCP"}),
+    awful.key({},"XF86AudioPlay",function() awful.spawn.with_shell("playerctl play-pause || mocp -G ") end,
+            {description ="Toggle Play Audio",group="MOCP"}),
     -- ALSA volume control
     --awful.key({ modkey1 }, "Up",
     awful.key({ }, "XF86AudioRaiseVolume",
@@ -640,32 +648,15 @@ awful.rules.rules = {
                      size_hints_honor = false
      }
     },
-    rule_any = {
-        instance = { "scratch" },
-        class = { "scratch" },
-        icon_name = { "scratchpad_urxvt" },
-    },
-    properties = {
-        skip_taskbar = false,
-        floating = true,
-        ontop = false,
-        minimized = true,
-        sticky = false,
-        width = screen_width * 0.7,
-        height = screen_height * 0.75
-    },
-    callback = function (c)
-        awful.placement.centered(c,{honor_padding = true, honor_workarea=true})
-        gears.timer.delayed_call(function()
-            c.urgent = false
-        end)
-    end,
-
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
       properties = { titlebars_enabled = false} },
 
-    
+   --browser in tag 2
+     {rule={class=browser},
+     properties={tag=awful.util.tagnames[2]}
+        
+     },
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
     --{ rule = { class = browser1 },
@@ -687,7 +678,8 @@ awful.rules.rules = {
 
     -- Set applications to be maximized at startup.
     -- find class or role via xprop command
-
+     {rule = {class="mpv",icon_name="video0 - mpv"},
+          properties = {floating=true,sticky=true}},
     { rule = { class = editorgui },
           properties = { maximized = true } },
 
@@ -697,8 +689,6 @@ awful.rules.rules = {
     { rule = { class = "inkscape" },
           properties = { maximized = true } },
 
-    { rule = { class = mediaplayer },
-          properties = { maximized = true } },
 
     { rule = { class = "Vlc" },
           properties = { maximized = true } },
@@ -840,4 +830,6 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("volumeicon")
 awful.spawn.with_shell("xdman")
 awful.spawn.with_shell("st -e gtop")
+awful.spawn.with_shell("clipmenud")
+awful.spawn.with_shell("dunst")
 

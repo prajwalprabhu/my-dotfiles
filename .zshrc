@@ -142,7 +142,6 @@ alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-####   ARCOLINUX SETTINGS   ####
 
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -160,9 +159,6 @@ if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
 
 #list
 alias ls='ls --color=auto'
@@ -172,11 +168,6 @@ alias l='ls'
 alias l.="ls -A | egrep '^\.'"
 
 #fix obvious typo's
-alias cd..='cd ..'
-alias pdw="pwd"
-alias udpate='sudo pacman -Syyu'
-alias upate='sudo pacman -Syyu'
-
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
@@ -336,18 +327,15 @@ alias gs='git status'
 # alias gt='git tag'
 alias newtag='git tag -a'
 alias gac="git commit -a"
-alias r="ranger"
-alias edwm="cd ~/repo/my-dwm/; nvim config.def.h"
 alias erc="nvim ~/.zshrc"
-alias eas="nvim ~/.dwm/autostart.sh"
 alias pm="pacman "
-alias yt="youtube-dl -f 243+251"
-alias gdwm="cd ~/repo/my-dwm"
 alias clr="clear"
-alias dfm="dmenufm"
 alias vf="~/.config/vifm/scripts/vifmrun"
 alias gt="~/go/bin/tour"
 alias kite="~/.local/share/kite/kited"
+alias erl="nvim ~/.config/awesome/rc.lua"
+alias gr="cd ~/repo"
+alias gmd="cd ~/repo/my-dotfiles"
 c++()
 {
   g++ $1 -o $2 && ./$2
