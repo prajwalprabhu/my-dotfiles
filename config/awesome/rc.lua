@@ -457,10 +457,10 @@ globalkeys = my_table.join(
               {description = "-10%", group = "hotkeys"}),
 
     --MOCP Music Keys
-    awful.key({},"XF86AudioNext",function() awful.spawn.with_shell("mocp -f && sleep 1; notify-send $(mocp -Q %file) &") end,
+    awful.key({},"XF86AudioNext",function() awful.spawn.with_shell("mocp -f && sleep 1; notify-send $(mocp -Q %file) ") end,
             {description="Song next in MOCP",group="MOCP"}),
 
-    awful.key({},"XF86AudioPrev",function() awful.spawn.with_shell("mocp -r && sleep 1; notify-send $(mocp -Q %file) &") end,
+    awful.key({},"XF86AudioPrev",function() awful.spawn.with_shell("mocp -r && sleep 1; notify-send $(mocp -Q %file) ") end,
             {description="Song previous in MOCP",group="MOCP"}),
     awful.key({},"XF86AudioPlay",function() awful.spawn.with_shell("playerctl play-pause || mocp -G ") end,
             {description ="Toggle Play Audio",group="MOCP"}),
