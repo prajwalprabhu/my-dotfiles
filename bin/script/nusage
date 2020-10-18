@@ -1,0 +1,6 @@
+#!/bin/bash
+net=$(iw dev | awk '$1=="Interface" {print $2}')
+#echo $net
+data=$(iw $net link|grep "RX"| awk '{print $2/1048576 "M"} ')
+echo $data
+

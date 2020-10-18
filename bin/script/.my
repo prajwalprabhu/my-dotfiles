@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /home/coolpp/Downloads/Video && mv *.ts /home/coolpp/.my-folder
+/home/coolpp/.my-folder/test

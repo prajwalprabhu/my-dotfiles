@@ -1,0 +1,10 @@
+#/bin/bash
+while true 
+do
+ stat=$(cat /proc/acpi/button/lid/LID0/state | awk '/state/ {print $2}')
+ if [ "$stat" != "open" ] 
+ then
+ betterlockscreen --lock
+ fi
+sleep 2
+done
