@@ -120,6 +120,12 @@ HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=5000
 
+
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)
 # Use fzf
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
@@ -336,6 +342,7 @@ alias kite="~/.local/share/kite/kited"
 alias erl="nvim ~/.config/awesome/rc.lua"
 alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
+alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
 c++()
 {
   g++ $1 -o $2 && ./$2
@@ -397,3 +404,5 @@ ex ()
 neofetch
 
 
+alias ls=lsd 
+eval "$(lua ~/repo/z.lua/z.lua --init zsh)"

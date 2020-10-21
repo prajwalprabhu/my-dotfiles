@@ -231,7 +231,7 @@ globalkeys = my_table.join(
         {description = "code" , group = "terminal apps" }),
     awful.key({  altkey  }, "c", function () awful.util.spawn( "clipmenu" ) end,
         {description = "clipmeu" , group = "terminal apps" }),
-    awful.key({  altkey  }, "m", function () awful.util.spawn( "tdrop -n 5 -a st  -e  mocp" ) end,
+    awful.key({  altkey  }, "m", function () awful.util.spawn( "tdrop -h 70% -w 60% -x 20% -y 15% -n 5 -a st  -e  mocp" ) end,
         {description = "moc" , group = "terminal apps" }),
     awful.key({  altkey  }, "b", function () awful.util.spawn( browser ) end,
         {description = "Brave" , group = "terminal apps" }),
@@ -399,11 +399,11 @@ globalkeys = my_table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn( terminal ) end,
               {description = "terminal ", group = "super"}),
-    awful.key( {altkey},"Return",function () awful.spawn.with_shell("tdrop -a st") end,
+    awful.key( {altkey},"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -a st") end,
                 {description ="st-scratchpad",group="scratchpad"}),
-    awful.key( {altkey,"Shift"   },"Return",function () awful.spawn.with_shell("tdrop -n 4 -a st -e ~/.config/vifm/scripts/vifmrun") end,
+    awful.key( {altkey,"Shift"   },"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -n 4 -a st -e ~/.config/vifm/scripts/vifmrun") end,
                 {description ="st-scratchpad",group="scratchpad"}),
-    awful.key({altkey}, "w",function () awful.spawn.with_shell(" tdrop -x 70% -y 70% -w 30% -h 30% mpv /dev/video0")end,
+    awful.key({altkey}, "w",function () awful.spawn.with_shell("tdrop -x 70% -y 70% -w 30% -h 30% mpv /dev/video0")end,
                {description ="webcam",group="scratchpad"}),
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
@@ -657,6 +657,8 @@ awful.rules.rules = {
      properties={tag=awful.util.tagnames[2]}
         
      },
+     { rule = { class = "Code"},
+    properties={tag=awful.util.tagnames[4]}},
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
     --{ rule = { class = browser1 },
