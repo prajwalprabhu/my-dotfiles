@@ -71,14 +71,14 @@ local modkey1      = "Control"
 
 -- personal variables
 local browser           = "qutebrowser"
-local editor            = os.getenv("EDITOR") or "vim"
+-- local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "geany"
-local filemanager       = "thunar"
-local mailclient        = "geary"
-local mediaplayer       = "mpv"
-local scrlocker         = "slimlock"
+-- local filemanager       = "thunar"
+-- local mailclient        = "geary"
+-- local mediaplayer       = "mpv"
+-- local scrlocker         = "slimlock"
 local terminal          = "st"
-local virtualmachine    = "virtualbox"
+-- local virtualmachine    = "virtualbox"
 
 -- awesome variables
 awful.util.terminal = terminal

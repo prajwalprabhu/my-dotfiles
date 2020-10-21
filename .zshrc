@@ -99,7 +99,6 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
-# else
 #   export EDITOR='mvim'
 # fi
 
@@ -116,7 +115,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^[[A' history-substring-search-up			
 bindkey '^[[B' history-substring-search-down
 
-HISTFILE=~/.zhistory
+HISTFILE=~/.cache/zsh/.zhistory
 HISTSIZE=10000
 SAVEHIST=5000
 
