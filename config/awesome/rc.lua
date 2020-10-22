@@ -70,7 +70,7 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "qutebrowser"
+local browser           = "firefox"
 -- local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "geany"
 -- local filemanager       = "thunar"
@@ -655,8 +655,9 @@ awful.rules.rules = {
    --browser in tag 2
      {rule={class=browser},
      properties={tag=awful.util.tagnames[2]}
-        
      },
+     {rule={class="st",instance="gtop"},
+    properties={tag=awful.util.tagnames[3]}},
      { rule = { class = "Code"},
     properties={tag=awful.util.tagnames[4]}},
     -- Set applications to always map on the tag 1 on screen 1.
