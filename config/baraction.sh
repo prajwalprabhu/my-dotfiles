@@ -10,7 +10,7 @@ hdd() {
 ## RAM
 mem() {
   mem=`free | awk '/Mem/ {printf "%dM/%dM\n", $3 / 1024.0, $2 / 1024.0 }'`
-  echo -e "$mem"
+  echo -e "MEMORY: $mem"
 }
 
 ## CPU
@@ -26,10 +26,19 @@ cpu() {
 
 ## VOLUME
 vol() {
-    vol=`amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }' | sed 's/on://g'`
+    # vol=`amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }' | sed 's/on://g'`
+    vol=$(pamixer --get-volume-human)
     echo -e "VOL: $vol"
 }
 
+bat(){
+  capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+  echo -e "BAT: $capacity%"
+}
+wifi(){
+    name=$(nmcli d | awk '/connected/ {print $4}')
+    echo -e "$name"
+}
 SLEEP_SEC=3
 #loops forever outputting a line every SLEEP_SEC secs
 
@@ -38,6 +47,8 @@ SLEEP_SEC=3
 # So I would love to add more functions to this script but it makes the 
 # echo output too long to display correctly.
 while :; do
-  echo "+@fg=1; +@fn=1;💻+@fn=0; $(cpu) +@fg=0; | +@fg=2; +@fn=1;💾+@fn=0; $(mem) +@fg=0; | +@fg=3; +@fn=1;💿+@fn=0; $(hdd) +@fg=0; | +@fg=4; +@fn=1;🔈+@fn=0; $(volume) +@fg=0; | $(internet)| $(wifi)"
+  echo "+@fg=1; +@fn=1;💻+@fn=0; $(cpu) +@fg=0; | +@fg=2; +@fn=1;💾+@fn=0; $(mem) +@fg=0; | +@fg=3; +@fn=1;💿+@fn=0; $(hdd) +@fg=0; | +@fg=4; +@fn=1;🔈+@fn=0; $(vol) +@fg=0;| +@fg=1; +@fn=1; +@fn=0; $(bat) |+@fg=2; +@fn=1;+@fn=0; $(wifi) | "
+  # +@fg=4;+@fn=1;
+  # $(internet) +@fg=0| $(wifi) +@fg=0"
 	sleep $SLEEP_SEC
 done
