@@ -13,6 +13,7 @@ from key_binding import keys
 from topbar import init_widgets_list
 from colors import colors
 from scratchpad import Scratchpad, DropDown_Keys
+from rules import Rules
 
 
 widget_defaults = dict(
@@ -24,18 +25,17 @@ widget_defaults = dict(
 
 
 if __name__ in ["config", "__main__"]:
-    screens = [Screen(top=bar.Bar(widgets=init_widgets_list(), opacity=1.0, size=20))]
-    # screens=init_screens()
+    screens = [
+        Screen(top=bar.Bar(widgets=init_widgets_list(), opacity=1.0, size=20))]
     widgets_list = init_widgets_list()
     widgets_screen1 = init_widgets_list()
-    # widgets_screen2 = init_widgets_screen2()
     scratchpad = Scratchpad()
     dd_keys = DropDown_Keys()
     groups = my_groups
     groups += scratchpad.init_scratchpad()
     keys += dd_keys.init_dropdown_keybindings()
     dgroups_key_binder = None
-    dgroups_app_rules = []  # type: List
+    # dgroups_app_rules = Rules().init_rules() # type: List
     main = None
     follow_mouse_focus = True
     bring_front_click = False

@@ -40,8 +40,8 @@ class Scratchpad(object):
 						warp_pointer = warp_pointer),
 
 					# Another terminal exclusively for qshell
-					DropDown("qshell",
-						terminal + " -e qshell",
+					DropDown("vifm",
+						terminal + " -e vifmrun",
 						opacity = opacity,
 						y = y_position,
 						height = height,
@@ -58,17 +58,17 @@ class DropDown_Keys(object):
 	def init_dropdown_keybindings(self):
 
 		# Key alias
-		mod =	"mod4"
+		# mod =	"mod4"
 		alt =	"mod1"
-		altgr =	"mod5"
+		# altgr =	"mod5"
 
 		return [
 			Key([alt], "Return",
 				lazy.group["SPD"].dropdown_toggle("term")),
 			Key([alt], "m",
 				lazy.group["SPD"].dropdown_toggle("music")),
-			Key([mod], "semicolon",
-				lazy.group["SPD"].dropdown_toggle("qshell")),
+			Key([alt,"shift"], "Return",
+				lazy.group["SPD"].dropdown_toggle("vifm")),
 		]
 
 # vim: tabstop=4 shiftwidth=4 noexpandtab

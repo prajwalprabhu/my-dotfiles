@@ -62,6 +62,7 @@ class Rules(object):
 					"Gnome-multi-writer",
 					"balena-etcher-electron",
 					"Virt-manager",
+					"xdman-Main",
 					re.compile("VirtualBox")
 				]),
 				float = True,
