@@ -357,6 +357,10 @@ lnconf()
 	fi
 	ln -s ~/repo/my-dotfiles/config/$1  ~/.config/$1
 }
+locate()
+{
+  find $1 -name $2 2>/dev/null
+}
 ex ()
 {
   if [ -f $1 ] ; then

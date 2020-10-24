@@ -1,4 +1,5 @@
 from os import environ
+
 from libqtile.config import ScratchPad, DropDown, Key
 from libqtile.command import lazy
 
@@ -8,8 +9,8 @@ class Scratchpad(object):
 
 		# Terminal
 		# terminal = environ.get("TERMINAL_SOLO")
-        # terminal=myTerm
-        # terminal=myTerm
+		terminal='st'
+
 		# Configuration
 		height =				0.4650
 		y_position =			0.0151
@@ -22,8 +23,7 @@ class Scratchpad(object):
 				dropdowns = [
 					# Drop down terminal with tmux session
 					DropDown("term",
-						# terminal + " -e tmux new-session -A -s 'dd'",
-                        'st',
+						terminal ,
 						opacity = opacity,
 						y = y_position,
 						height = height,
@@ -32,7 +32,7 @@ class Scratchpad(object):
 
 					# Another terminal exclusively for music player
 					DropDown("music",
-						"st  -e mocp",
+						terminal + " -e mocp",
 						opacity = opacity,
 						y = y_position,
 						height = height,
@@ -41,7 +41,7 @@ class Scratchpad(object):
 
 					# Another terminal exclusively for qshell
 					DropDown("qshell",
-						 "st -e qshell",
+						terminal + " -e qshell",
 						opacity = opacity,
 						y = y_position,
 						height = height,
