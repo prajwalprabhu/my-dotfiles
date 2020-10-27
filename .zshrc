@@ -222,12 +222,6 @@ alias update-fc='sudo fc-cache -fv'
 alias skel='cp -Rf ~/.config ~/.config-backup-$(date +%Y.%m.%d-%H.%M.%S) && cp -rf /etc/skel/* ~'
 #backup contents of /etc/skel to hidden backup folder in home/user
 alias bupskel='cp -Rf /etc/skel ~/.skel-backup-$(date +%Y.%m.%d-%H.%M.%S)'
-
-#copy bashrc-latest over on bashrc - cb= copy bashrc
-#alias cb='sudo cp /etc/skel/.bashrc ~/.bashrc && source ~/.bashrc'
-#copy /etc/skel/.zshrc over on ~/.zshrc - cb= copy zshrc
-alias cz='sudo cp /etc/skel/.zshrc ~/.zshrc && source ~/.zshrc'
-
 #switch between bash and zsh
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
@@ -251,8 +245,6 @@ alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/p
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
-#mounting the folder Public for exchange between host and guest on virtualbox
-alias vbm="sudo /usr/local/bin/arcolinux-vbox-share"
 
 #shopt
 #shopt -s autocd # change to named directory
@@ -342,6 +334,9 @@ alias erl="nvim ~/.config/awesome/rc.lua"
 alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
 alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
+alias ls="lsd" 
+eval "$(lua ~/repo/z.lua/z.lua --init zsh)"
+# alias 
 c++()
 {
   g++ $1 -o $2 && ./$2
@@ -407,5 +402,3 @@ ex ()
 neofetch
 
 
-alias ls=lsd 
-eval "$(lua ~/repo/z.lua/z.lua --init zsh)"

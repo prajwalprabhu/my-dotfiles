@@ -1,19 +1,15 @@
 # -*- coding: utf-8 -*-
 import os
-import socket
 import subprocess
-from libqtile.config import Key, Screen
-from libqtile.command import lazy
-from libqtile import layout, bar, widget, hook
-# from typing import List  # noqa: F401
+from libqtile.config import Screen
+from libqtile import bar,  hook
 
 from groups import my_groups
-from variable import mod
 from key_binding import keys
 from topbar import init_widgets_list
 from colors import colors
 from scratchpad import Scratchpad, DropDown_Keys
-from rules import Rules
+from my_layouts import *
 
 
 widget_defaults = dict(
@@ -26,7 +22,7 @@ widget_defaults = dict(
 
 if __name__ in ["config", "__main__"]:
     screens = [
-        Screen(top=bar.Bar(widgets=init_widgets_list(), opacity=1.0, size=20))]
+        Screen(top=bar.Bar(widgets=init_widgets_list(), opacity=0.7, size=20))]
     widgets_list = init_widgets_list()
     widgets_screen1 = init_widgets_list()
     scratchpad = Scratchpad()

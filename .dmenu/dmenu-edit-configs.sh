@@ -17,6 +17,8 @@ termite
 vifm
 xresources
 zsh
+qtile 
+awesome
 quit")
 
 choice=$(echo -e "${options[@]}" | dmenu -i -p 'Edit config file: ')
@@ -64,6 +66,12 @@ case "$choice" in
 	zsh)
 		choice="$HOME/.zshrc"
 	;;
+  qtile)
+    choice="$HOME/.config/qtile/config.py"
+  ;;
+  awesome)
+    choice="$HOME/.config/awesome/rc.lua"
+  ;;
 	*)
 		exit 1
 	;;

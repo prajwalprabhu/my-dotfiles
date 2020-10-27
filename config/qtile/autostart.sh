@@ -15,10 +15,10 @@ run-or-restart() {
 }
 
 run picom &
-run wal -R &
+wal -R &
 run /usr/lib/jvm/java-14-openjdk/bin/java -Xmx1024m -jar /opt/xdman/xdman.jar -m &
 run dunst &
 run clipmenud &
 run nm-applet &
 run mocp &
-
+run volumeicon &

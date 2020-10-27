@@ -57,25 +57,12 @@ def init_widgets_list():
               widget.TextBox(
                        text = '',
                        background = colors[0],
-                       foreground = colors[4],
+                       foreground = colors[5],
                        padding = 0,
                        fontsize = 37
                        ),
-            #   widget.TextBox(
-            #            text = " ₿",
-            #            padding = 0,
-            #            foreground = colors[2],
-            #            background = colors[4],
-            #            fontsize = 12
-            #            ),
-            #   widget.TextBox(
-            #            text=subprocess.check_output("battery").decode(),
-            #            foreground = colors[2],
-            #            background = colors[4],
-            #            padding = 5
-            #            ),q
              widget.Battery(
-                background = colors[4],
+                background = colors[5],
                         foreground = "#ffffff",
                         padding = 0,
 
@@ -100,13 +87,13 @@ def init_widgets_list():
             #            threshold = 90,
             #            padding = 5
             #            ),
-            #   widget.TextBox(
-            #            text='',
-            #            background = colors[5],
-            #            foreground = colors[4],
-            #            padding = 0,
-            #            fontsize = 37
-            #            ),
+              widget.TextBox(
+                       text='',
+                       background = colors[5],
+                       foreground = colors[4],
+                       padding = 0,
+                       fontsize = 37
+                       ),
             #   widget.TextBox(
             #            text = " ⟳",
             #            padding = 2,
@@ -121,13 +108,10 @@ def init_widgets_list():
             #            mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e sudo pacman -Syu')},
             #            background = colors[4]
             #            ),
-            #   widget.TextBox(
-            #            text = "Updates",
-            #            padding = 5,
-            #            mouse_callbacks = {'Button1': lambda qtile: qtile.cmd_spawn(myTerm + ' -e sudo pacman -Syu')},
-            #            foreground = colors[2],
-            #            background = colors[4]
-            #            ),
+              widget.Moc(
+                       foreground = colors[2],
+                       background = colors[4]
+                       ),
               widget.TextBox(
                        text = '',
                        background = colors[4],
@@ -175,7 +159,7 @@ def init_widgets_list():
                        background = colors[5],
                        padding = 0
                        ),
-              widget.Volume(
+              widget.PulseVolume(
                        foreground = colors[2],
                        background = colors[5],
                        padding = 5
