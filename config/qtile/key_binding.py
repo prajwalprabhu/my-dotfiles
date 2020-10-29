@@ -1,3 +1,4 @@
+from os import system
 from libqtile.config import Key, Drag, Click
 from libqtile.command import lazy
 from variable import *
@@ -123,18 +124,15 @@ keys = [
         lazy.spawn("clipmenu"),
         desc="Launches Clipmenu"
         ),
-    #  Key([alt],"m",
-    #        lazy.spawn(tdrop+"-n 2 -a st -e mocp"),
-    #        desc="Launches mocp"),
-    # #  Key([alt],"Return",
-    #       lazy.spawn(tdrop+"-n 1 -a st"),
-    #       desc="Launches st"),
     Key([alt], "v",
         lazy.spawn("code"),
         desc="VS-code"),
+    Key([alt],"a",
+        lazy.spawn("atom"),
+        desc="Atom-editor"),
     Key([alt], "f",
-        lazy.spawn("st -e vifmrun"),
-        desc="Vifm"),
+        lazy.spawn(f"st -e {filemanager}"),
+        desc=filemanager),
     Key([], "XF86AudioRaiseVolume",
         lazy.spawn("pamixer -i 5"),
         desc="Increase Volume"),
@@ -147,15 +145,19 @@ keys = [
         desc="Toggle Mute"),
     Key([], "XF86AudioNext",
         lazy.spawn(
-        "mocp -f ; sleep 1 ; name=$(mocp -Q %file) ; notify-send $name"),
+        "mpc next"),
         desc="Next Song MOCP"),
     Key([], "XF86AudioPrev",
         lazy.spawn(
-        "mocp -r ; sleep 1 ;name=$(mocp -Q %file); notify-send $name"),
+        "mpc prev"),
         desc="Audio Previous in MOCP"),
     Key([], "XF86AudioPlay",
-        lazy.spawn(" mocp -G"),
+        lazy.spawn(" mpc toggle"),
         desc="Toggle Pause in MOCP"),
+    Key([mod],"Print",
+    # lazy.spawn(r"scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png"),
+    lazy.spawn("shot"),
+        desc="Take screenshot using scrot"),
 
     Key([mod], "Home",
         lazy.window.bring_to_front()),				# Bring window to front

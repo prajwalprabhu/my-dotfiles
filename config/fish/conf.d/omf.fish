@@ -2,8 +2,9 @@
 set -q XDG_DATA_HOME
   and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
   or set -gx OMF_PATH "$HOME/.local/share/omf"
-
-
+set -x PATH $PATH ~/.local/bin
+set -x PATH $PATH ~/.local/bin/statusbar
+set EDITOR 'nvim'
 # Load Oh My Fish configuration.
 source $OMF_PATH/init.fish
 source (lua $HOME/repo/z.lua/z.lua --init fish | psub)
@@ -92,7 +93,7 @@ alias push='git push origin'
 alias gs='git status'
 alias newtag='git tag -a'
 alias gac="git commit -a"
-alias erc="nvim ~/.zshrc"
+alias erc='nvim ~/.config/fish/conf.d/omf.fish'
 alias pm="pacman "
 alias clr="clear"
 alias vf="~/.config/vifm/scripts/vifmrun"
@@ -108,9 +109,9 @@ alias ls="lsd"
 # {
 #   g++ $1 -o $2 && ./$2
 # }
-# function c++
-    # g++ $arg1 -o $argv 
-# end
+function c++
+    g++ $argv[1] -o $argv[2] ; ./$argv[2] 
+end
 # addconf()
 # {
 #   mv $PWD/$1 ~/my-dotfile/$2 ;
@@ -122,11 +123,9 @@ alias ls="lsd"
 # 	fi
 # 	ln -s ~/repo/my-dotfiles/config/$1  ~/.config/$1
 # }
-# locate()
-# {
-#   find $1 -name $2 2>/dev/null
-# }
-
-# neofetch
+function locate
+    find $argv[1] -name $argv[2] 2>/dev/null
+end
+neofetch
 
 

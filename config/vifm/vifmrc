@@ -203,6 +203,8 @@ filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
          \*.as[fx]
         \ {View using mpv}
         \ mpv %f >/dev/null & ,
+        \ %pc
+        \ :reload
         \ {View using Dragon}
         \ dragon %f:p,
         \ {View using mplayer}
