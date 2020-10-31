@@ -23,3 +23,4 @@ run nm-applet &
 # run mocp &
 run volumeicon &
 run mpd &
+run redshift-gtk & 

@@ -447,7 +447,7 @@ nnoremap grr :cd ~/repo <cr>
 nnoremap grc :cd ~/.config/awesome <cr>
 nnoremap gmd :cd ~/repo/my-dotfiles <cr>
 nnoremap gsv : cd ~/Sandisk/Downloads/Video <cr>
-nnoremap qo  :!qutebrowser %f <cr>
+nnoremap qo  :!qutebrowser %f & <cr>
 
 "Open all images in current directory in sxiv thumbnail mode
 nnoremap sx :!sxiv -t %d & <cr>

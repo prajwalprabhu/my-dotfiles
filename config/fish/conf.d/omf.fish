@@ -104,6 +104,7 @@ alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
 alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
 alias ls="lsd" 
+alias pycharm="~/Downloads/Compressed/pycharm-community-2020.2.3/bin/pycharm.sh"
 # eval "(lua ~/repo/z.lua/z.lua --init zsh)"
 # c++()
 # {
