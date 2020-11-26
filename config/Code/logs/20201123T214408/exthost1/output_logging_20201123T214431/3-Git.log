@@ -1,0 +1,150 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /home/coolpp/repo/Yt-downloader
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :Ytdownloader.py
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/Ytdownloader.py
+> git cat-file -s b345bdba044c21669ff7be51aa29c52c8952bc88
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/Ytdownloader.py
+> git cat-file -s b345bdba044c21669ff7be51aa29c52c8952bc88
+> git show --textconv :Ytdownloader.py
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git show --textconv :cython/Ytdownloader.html
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.html
+> git show --textconv :Ytdownloader.py
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/Ytdownloader.py
+> git cat-file -s b345bdba044c21669ff7be51aa29c52c8952bc88
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :cython/setup.py
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/setup.py
+> git cat-file -s 3db666eb512b90a2d5fd17dc96b35ce9775a2a77
+> git show --textconv :cython/Ytdownloader.pyx
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.pyx
+> git cat-file -s fe7a0788510b76586537207840e61ed5cbe4f731
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.cpython-36m-x86_64-linux-gnu.so
+> git show --textconv :cython/Ytdownloader.cpython-36m-x86_64-linux-gnu.so
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.cpython-36m-x86_64-linux-gnu.so
+> git cat-file -s 00f1eed637f30f50c0b0b47d124966f64a53a5d4
+> git show --textconv :cython/Ytdownloader.pyx
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.pyx
+> git cat-file -s fe7a0788510b76586537207840e61ed5cbe4f731
+> git show --textconv :cython/Ytdownloader.c
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.c
+> git cat-file -s fdd984f3412fc6da7b57b1575bd7b200540be425
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :cython/test.py
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/test.py
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :cython/Ytdownloader.c
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.c
+> git cat-file -s fdd984f3412fc6da7b57b1575bd7b200540be425
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.c
+> git cat-file -s 952cef6a0b2d9a52332dca4816230e3fa4f0c0c1
+> git show --textconv :cython/Ytdownloader.c

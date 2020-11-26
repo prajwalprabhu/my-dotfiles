@@ -1,0 +1,7 @@
+[2020-11-24 21:28:59.910] [renderer1] [error] Unable to load and parse grammar for scope source.cython from file:///home/coolpp/.vscode/extensions/tcwalther.cython-0.1.0/syntaxes/cython.tmLanguage {"fileOperationResult":1,"options":{"preferUnbuffered":true}}
+[2020-11-24 21:28:59.911] [renderer1] [error] No grammar provided for <source.cython>: Error: No grammar provided for <source.cython>
+    at e._collectDependenciesForDep (/usr/share/code/resources/app/node_modules.asar/vscode-textmate/release/main.js:1:25272)
+    at e.<anonymous> (/usr/share/code/resources/app/node_modules.asar/vscode-textmate/release/main.js:1:25768)
+    at /usr/share/code/resources/app/node_modules.asar/vscode-textmate/release/main.js:1:23299
+    at Object.next (/usr/share/code/resources/app/node_modules.asar/vscode-textmate/release/main.js:1:23404)
+    at s (/usr/share/code/resources/app/node_modules.asar/vscode-textmate/release/main.js:1:22118)

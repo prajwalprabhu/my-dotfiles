@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "python.showStartPage": false
+}

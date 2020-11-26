@@ -1,0 +1,16 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --git-dir
+Open repository: /home/coolpp/repo/Yt-downloader
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse playlist
+> git rev-parse --symbolic-full-name playlist@{u}
+> git rev-list --left-right playlist...refs/remotes/origin/playlist
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :cython/Ytdownloader.pyx
+> git ls-files --stage -- /home/coolpp/repo/Yt-downloader/cython/Ytdownloader.pyx
+> git cat-file -s fe7a0788510b76586537207840e61ed5cbe4f731
+> git check-ignore -v -z --stdin

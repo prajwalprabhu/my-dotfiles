@@ -1,0 +1,1 @@
+[2020-11-14 21:43:23.958] [renderer1] [error] [text file model] handleSaveError(968) - exit - resulted in a save error: Error: Unable to write file '/home/coolpp/tut/sel/playlist/main.py' (Error: File Modified Since) file:///home/coolpp/tut/sel/playlist/main.py

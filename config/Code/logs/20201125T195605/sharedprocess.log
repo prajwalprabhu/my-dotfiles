@@ -1,0 +1,12 @@
+[2020-11-25 19:56:09.477] [sharedprocess] [info] main {"machineId":"64029b3b2a5f66e8811bc8de3bcf2f80ebbef5d5f843eee4cc4f73340f414595","windowId":2}
+[2020-11-25 19:56:09.853] [sharedprocess] [info] Deleted from disk dracula-theme.theme-dracula /home/coolpp/.vscode/extensions/dracula-theme.theme-dracula-2.22.1
+[2020-11-25 19:56:09.953] [sharedprocess] [info] Deleted from disk esbenp.prettier-vscode /home/coolpp/.vscode/extensions/esbenp.prettier-vscode-5.7.2
+[2020-11-25 19:56:10.120] [sharedprocess] [info] Deleted from disk ms-toolsai.jupyter /home/coolpp/.vscode/extensions/ms-toolsai.jupyter-2020.11.358541065
+[2020-11-25 19:56:10.143] [sharedprocess] [info] Deleted from disk ms-python.python /home/coolpp/.vscode/extensions/ms-python.python-2020.11.358366026
+[2020-11-25 19:56:23.580] [sharedprocess] [info] Installing extension: ms-vscode.cpptools
+[2020-11-25 19:56:25.410] [sharedprocess] [info] Downloaded extension: ms-vscode.cpptools undefined
+[2020-11-25 19:56:25.775] [sharedprocess] [info] Extracted extension to /home/coolpp/.vscode/extensions/.ms-vscode.cpptools-1.1.2: ms-vscode.cpptools
+[2020-11-25 19:56:25.776] [sharedprocess] [info] Renamed to /home/coolpp/.vscode/extensions/ms-vscode.cpptools-1.1.2
+[2020-11-25 19:56:25.779] [sharedprocess] [info] Installation completed. ms-vscode.cpptools
+[2020-11-25 19:56:25.795] [sharedprocess] [info] Extensions installed successfully: ms-vscode.cpptools
+[2020-11-25 19:56:49.494] [sharedprocess] [info] Starting to clean up unused language packs.
