@@ -437,16 +437,16 @@ nnoremap bw  :!wal -i %f  && cp %f /home/collpp/.config/wall.jpg ; feh --bg-scal
 "Go to
 nnoremap gh :cd ~/ <cr>
 nnoremap gv :cd ~/Downloads/Video <cr>
-nnoremap gx :cd ~/.my-folder <cr>
+nnoremap gx :cd ~/.myfolder <cr>
 nnoremap g/ :cd / <cr>
-nnoremap gl :cd ~/Library <cr>
-nnoremap gt :cd ~/text-book <cr>
+" nnoremap gl :cd ~/Library <cr>
+" nnoremap gt :cd ~/text-book <cr>
 nnoremap gcc :cd ~/.config <cr>
 nnoremap gcv :cd ~/.config/vifm <cr>
 nnoremap grr :cd ~/repo <cr>
-nnoremap grc :cd ~/.config/awesome <cr>
+" nnoremap grc :cd ~/.config/awesome <cr>
 nnoremap gmd :cd ~/repo/my-dotfiles <cr>
-nnoremap gsv : cd ~/Sandisk/Downloads/Video <cr>
+" nnoremap gsv : cd ~/Sandisk/Downloads/Video <cr>
 nnoremap qo  :!qutebrowser %f & <cr>
 
 "Open all images in current directory in sxiv thumbnail mode
