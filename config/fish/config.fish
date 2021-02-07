@@ -1,5 +1,11 @@
 set -x PATH $PATH ~/.local/bin
+set -x PATH $PATH /opt/Jet/bin
 set EDITOR 'nvim'
+export RUST_SRC_PATH=/home/coolpp/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/
+alias cr="cargo -q run"
+alias cb="cargo +stable build"
+alias rd="rustup doc"
+alias sai="sudo apt install"
 alias aup="pamac upgrade --aur"
 alias grubup="sudo update-grub"
 alias orphaned="sudo pacman -Rns (pacman -Qtdq)"
@@ -90,7 +96,8 @@ alias erl="nvim ~/.config/awesome/rc.lua"
 alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
 alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
-alias ls="lsd" 
+alias ls="exa" 
+
 function c++
     g++ $argv[1] -o $argv[2] ; ./$argv[2] 
 end
