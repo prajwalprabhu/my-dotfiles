@@ -2,6 +2,7 @@ set -x PATH $PATH ~/.local/bin
 set -x PATH $PATH /opt/Jet/bin
 set EDITOR 'nvim'
 export RUST_SRC_PATH=/home/coolpp/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/
+alias elw="nvim ~/.config/leftwm/config.toml"
 alias cr="cargo -q run"
 alias cb="cargo +stable build"
 alias rd="rustup doc"
