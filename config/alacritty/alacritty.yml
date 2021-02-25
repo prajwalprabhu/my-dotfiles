@@ -274,7 +274,7 @@ draw_bold_text_with_bright_colors: true
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.9
+background_opacity: 0.8
 
 #selection:
 #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -646,28 +646,27 @@ mouse:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x0a0806'
-    foreground: '0xd5d6d5'
+    background: "0x0a0806"
+    foreground: "0xd5d6d5"
   cursor:
-    text:       '0x0a0806'
-    cursor:     '0xd5d6d5'
+    text: "0x0a0806"
+    cursor: "0xd5d6d5"
   normal:
-    black:      '0x0a0806'
-    red:        '0x8D7F58'
-    green:      '0x3C6CA8'
-    yellow:     '0x5E7999'
-    blue:       '0x6E8AA6'
-    magenta:    '0x6A9CC8'
-    cyan:       '0x9DA2A4'
-    white:      '0xd5d6d5'
+    black: "0x0a0806"
+    red: "0x8D7F58"
+    green: "0x3C6CA8"
+    yellow: "0x5E7999"
+    blue: "0x6E8AA6"
+    magenta: "0x6A9CC8"
+    cyan: "0x9DA2A4"
+    white: "0xd5d6d5"
   bright:
-    black:      '0x959595'
-    red:        '0x8D7F58'
-    green:      '0x3C6CA8'
-    yellow:     '0x5E7999'
-    blue:       '0x6E8AA6'
-    magenta:    '0x6A9CC8'
-    cyan:       '0x9DA2A4'
-    white:      '0xd5d6d5'
-
+    black: "0x959595"
+    red: "0x8D7F58"
+    green: "0x3C6CA8"
+    yellow: "0x5E7999"
+    blue: "0x6E8AA6"
+    magenta: "0x6A9CC8"
+    cyan: "0x9DA2A4"
+    white: "0xd5d6d5"
 # END ACE

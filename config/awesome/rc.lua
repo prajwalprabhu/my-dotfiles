@@ -70,14 +70,14 @@ local altkey       = "Mod1"
 local modkey1      = "Control"
 
 -- personal variables
-local browser           = "firefox"
+local browser           = "brave"
 -- local editor            = os.getenv("EDITOR") or "vim"
 local editorgui         = "geany"
 -- local filemanager       = "thunar"
 -- local mailclient        = "geary"
 -- local mediaplayer       = "mpv"
 -- local scrlocker         = "slimlock"
-local terminal          = "st"
+local terminal          = "alacritty"
 -- local virtualmachine    = "virtualbox"
 
 -- awesome variables
@@ -399,12 +399,12 @@ globalkeys = my_table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn( terminal ) end,
               {description = "terminal ", group = "super"}),
-    awful.key( {altkey},"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -a st") end,
-                {description ="st-scratchpad",group="scratchpad"}),
-    awful.key( {altkey,"Shift"   },"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -n 4 -a st -e ~/.config/vifm/scripts/vifmrun") end,
-                {description ="st-scratchpad",group="scratchpad"}),
-    awful.key({altkey}, "w",function () awful.spawn.with_shell("tdrop -x 70% -y 70% -w 30% -h 30% mpv /dev/video0")end,
-               {description ="webcam",group="scratchpad"}),
+    -- awful.key( {altkey},"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -a st") end,
+                -- {description ="st-scratchpad",group="scratchpad"}),
+    -- awful.key( {altkey,"Shift"   },"Return",function () awful.spawn.with_shell("tdrop -h 70% -w 60% -x 20% -y 15% -n 4 -a st -e ~/.config/vifm/scripts/vifmrun") end,
+                -- {description ="st-scratchpad",group="scratchpad"}),
+    -- awful.key({altkey}, "w",function () awful.spawn.with_shell("tdrop -x 70% -y 70% -w 30% -h 30% mpv /dev/video0")end,
+               -- {description ="webcam",group="scratchpad"}),
     awful.key({ modkey, "Shift" }, "r", awesome.restart,
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey,    }, "x", awesome.quit ,
@@ -660,6 +660,8 @@ awful.rules.rules = {
     properties={tag=awful.util.tagnames[3]}},
      { rule = { class = "Code"},
     properties={tag=awful.util.tagnames[4]}},
+    {rule={class="mpv"},
+    properties={tag=awful.util.tagnames[7]}},
     -- Set applications to always map on the tag 1 on screen 1.
     -- find class or role via xprop command
     --{ rule = { class = browser1 },
@@ -827,12 +829,12 @@ client.connect_signal("focus", border_adjust)
 client.connect_signal("property::maximized", border_adjust)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
-awful.spawn.with_shell("wal -R ; sleep 2; feh --bg-scale /home/collpp/.config/wall.jpg")
+-- awful.spawn.with_shell("wal -R ; sleep 2; feh --bg-scale /home/collpp/.config/wall.jpg")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("volumeicon")
 awful.spawn.with_shell("xdman")
-awful.spawn.with_shell("st -e gtop")
-awful.spawn.with_shell("clipmenud")
-awful.spawn.with_shell("dunst")
+-- awful.spawn.with_shell("st -e gtop")
+awful.spawn.with_shell("xfce4-clipman")
+-- awful.spawn.with_shell("dunst")
 

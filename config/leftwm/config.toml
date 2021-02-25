@@ -1,17 +1,18 @@
 modkey = "Mod4"
 workspaces = []
-# tags = ["SYS", "WWW", "FILE", "DEV", "MOV", "MUS", "7", "8", "9"]
+ #tags = ["SYS", "WWW", "FILE", "DEV", "MOV", "MUS", "7", "SER", "9"]
 tags = ["1","2","3","4","5","6","7","8","9"]
 
 [[keybind]]
 command="Execute"
-value="brave-browser"
+value="brave"
 modifier = ["modkey"]
 key = "b"
 
 [[keybind]]
 command="Execute"
-value="nemo"
+#value="nautilus --new-window"
+value="thunar"
 modifier=["modkey"]
 key = "f"
 
@@ -23,7 +24,7 @@ key = "p"
 
 [[keybind]]
 command = "Execute"
-value = "konsole"
+value = "alacritty"
 modifier = ["modkey" ]
 key = "Return"
 
@@ -45,8 +46,8 @@ key = "x"
 
 [[keybind]]
 command = "Execute"
-value = "slock"
-modifier = ["modkey", "Control"]
+value = "betterlockscreen -s"
+modifier = ["modkey" ]
 key = "l"
 
 [[keybind]]
@@ -211,3 +212,50 @@ command = "MoveToTag"
 value = "9"
 modifier = ["modkey", "Shift"]
 key = "9"
+
+[[keybind]]
+command = "Execute"
+value = "termite -e nmtui"
+modifier = ["modkey"]
+key = "t"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer -i 5"
+modifier = [""]
+key = "XF86XK_AudioRaiseVolume"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer -t "
+modifier = [""]
+key = "XF86XK_AudioMute"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer -d 5 "
+modifier = [""]
+key = "XF86XK_AudioLowerVolume"
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -inc 5 "
+modifier = [""]
+key = "XF86XK_MonBrightnessUp"
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -dec 5 "
+modifier = [""]
+key = "XF86XK_MonBrightnessDown"
+
+[[keybind]]
+command = "MoveToLastWorkspace"
+modifier = ["modkey"]
+key = "Tab"
+
+[[keybind]]
+command = "Execute"
+value = "playerctl play-pause"
+modifier = [""]
+key = "XF86XK_AudioPause"

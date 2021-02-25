@@ -167,8 +167,8 @@ alias erl="nvim ~/.config/awesome/rc.lua"
 alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
 alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
-alias ls="lsd"
-eval "$(lua ~/repo/z.lua/z.lua --init zsh)"
+alias ls="exa"
+#eval "$(lua ~/repo/z.lua/z.lua --init zsh)"
 # alias 
 c++()
 {
@@ -212,26 +212,6 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-#powerline-shell
-#function powerline_precmd() {
-#    PS1="$(powerline-shell --shell zsh $?)"
-#}
-
-#function install_powerline_precmd() {
-#  for s in "${precmd_functions[@]}"; do
-#    if [ "$s" = "powerline_precmd" ]; then
-#      return
-#    fi
-#  done
-#  precmd_functions+=(powerline_precmd)
-#}
-
-#if [ "$TERM" != "linux" ]; then
-#    install_powerline_precmd
-#fi
-
-
-
-neofetch
-
-
+alias cr="cargo -q run"
+alias cb="cargo +stable build"
+alias rd="rustup doc"
