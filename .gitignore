@@ -1,2 +1,4 @@
 .moc/pid
 config/mpv/watch_later/*
+config/nvim/bundle/*
+config/nvim/go/*

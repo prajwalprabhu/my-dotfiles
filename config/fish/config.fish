@@ -1,6 +1,10 @@
-set -x PATH $PATH ~/.local/bin
+#set -x PATH $PATH ~/.local/bin
 #set -x PATH $PATH /opt/Jet/bin
 set -x PATH $PATH ~/.cargo/bin
+set -x PATH $PATH /usr/local/go/bin
+set -x PATH $PATH /usr/local/node/bin
+set -x PATH $PATH /opt/Goneovim
+#set -x PATH $PATH ~/.config/nvim/utils/bin
 set EDITOR 'nvim'
 export RUST_SRC_PATH=/home/coolpp/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/
 alias elw="nvim ~/.config/leftwm/config.toml"
@@ -98,7 +102,7 @@ alias erl="nvim ~/.config/awesome/rc.lua"
 alias gr="cd ~/repo"
 alias gmd="cd ~/repo/my-dotfiles"
 alias tdrop="tdrop -h 70% -w 60% -x 20% -y 15%"
-alias ls="exa" 
+#alias ls="exa" 
 
 function c++
     g++ $argv[1] -o $argv[2] ; ./$argv[2] 

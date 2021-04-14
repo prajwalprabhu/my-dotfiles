@@ -77,7 +77,7 @@ local editorgui         = "geany"
 -- local mailclient        = "geary"
 -- local mediaplayer       = "mpv"
 -- local scrlocker         = "slimlock"
-local terminal          = "alacritty"
+local terminal          = "xterm"
 -- local virtualmachine    = "virtualbox"
 
 -- awesome variables
