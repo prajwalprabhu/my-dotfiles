@@ -29,7 +29,7 @@ nmap ++ <plug>NERDCommenterToggle
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * NERDTree
-
+autocmd BufReadPost *.go :!go run %
 let g:NERDTreeGitStatusWithFlags = 1
 "let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 "let g:NERDTreeGitStatusNodeColorization = 1
@@ -404,6 +404,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
         " save the current file
         map <F2> :w!<CR>
         map <C-S> :w<CR>
+
 
         " go to next file in the open file list.
         map <F3> :n<CR>
